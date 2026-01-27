@@ -15,9 +15,9 @@
 
 ## Table of Contents
 
-- [:bulb: About](#bulb-about)
-- [:computer: Tech Stack](#computer-tech-stack)
-- [:rocket: Getting Started](#rocket-getting-started)
+- [:bulb: About](README.md#bulb-about)
+- [:computer: Tech Stack](README.md#computer-tech-stack)
+- [:rocket: Getting Started](README.md#rocket-getting-started)
 
 ## :bulb: About
 
@@ -79,17 +79,15 @@ After cloning the repository, navigate to the project directory using one of the
 
 - **Method 1: Using the Address Bar**
 
-  <figure align="center">
-   <img src="./images/support-doc/adress-bar-cmd.png" width="350" height="250" alt="adress-bar-cmd">
-   <figcaption><b>Open</b> the repository folder and <b>write</b> <code>cmd</code> in the address bar to open the terminal directly in that folder.</figcaption>
-  </figure>
+  <img src="./images/support-doc/adress-bar-cmd.png" width="300" height="250" alt="adress-bar-cmd">
+
+  **Open** the repository folder and **write** `cmd` in the address bar to open the terminal directly in that folder.
 
 - **Method 2: Using Right-Click Menu**
 
-  <figure align="center">
-   <img src="./images/support-doc/open-terminal.png" width="250" height="250" alt="open-terminal">
-   <figcaption><b>Open</b> the repository folder and <b>right-click</b> inside the folder, then select <b>"Open in Terminal"</b> or <b>"Open in PowerShell"</b> (depending on your system).</figcaption>
-  </figure>
+  <img src="./images/support-doc/open-terminal.png" width="250" height="250" alt="open-terminal">
+
+  **Open** the repository folder and **right-click** inside the folder, then select **"Open in Terminal"** or **"Open in PowerShell"** (depending on your system).
 
 - **Method 3: Using Your IDE**
 
