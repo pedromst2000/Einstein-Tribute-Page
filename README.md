@@ -15,9 +15,9 @@
 
 ## Table of Contents
 
-- [:bulb: About](README.md#bulb-about)
-- [:computer: Tech Stack](README.md#computer-tech-stack)
-- [:rocket: Getting Started](README.md#rocket-getting-started)
+- [:bulb: About](#bulb-about)
+- [:computer: Tech Stack](#computer-tech-stack)
+- [:rocket: Getting Started](#rocket-getting-started)
 
 ## :bulb: About
 
