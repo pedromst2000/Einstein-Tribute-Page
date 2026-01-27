@@ -1,9 +1,4 @@
-<!--
-  TODO : () Add UI Design section with screenshots
--->
-
-<div align="center" id="top">
-    <br/>
+<div align="center">
   <h1>Albert Einstein</h1>
   <p>
     "
@@ -16,12 +11,19 @@
 ## Table of Contents
 
 - [:bulb: About](#bulb-about)
+- [:sparkles: UI Preview](#sparkles-ui-preview)
 - [:computer: Tech Stack](#computer-tech-stack)
 - [:rocket: Getting Started](#rocket-getting-started)
 
 ## :bulb: About
 
 A modern tribute `landing page` for `Albert Einstein`, built with **React**, **TypeScript**, and **Tailwind CSS**. Showcases responsive design and a clean UI, while highlighting Einstein’s life and achievements.
+
+## :sparkles: UI Preview
+
+Comming Soon...
+
+(Will be updated with images of mockups and video demo)
 
 ## :computer: Tech Stack
 
@@ -43,17 +45,37 @@ Follow these **steps** to set up and `run` the project locally.
 
 Make sure you have the following installed on your machine before proceeding:
 
-- **Node.js**
-  - Atleast version `25.4.0`
+#### Option 1: Using nvm (Node Version Manager) - Recommended
+
+- **nvm**\*
+  - Used to install and manage the Node.js version required by this project.
+  - Allows easy switching between Node.js versions.
+  - Downloads and installs Node.js automatically based on the version defined in the `.nvmrc` file.
+  - **Download:**
+    - [Windows](https://www.nvmnode.com/guide/installation.html)
+    - [macOS/Linux](https://www.nvmnode.com/guide/installation-sh.html)
+
+> \* When using **nvm**, you do **not** need to install Node.js manually. Check the [documentation](https://www.nvmnode.com/guide/) for more details.
+
+#### Option 2: Manual Installation
+
+- **Node.js**\*
+  - Required version: `24.13.0` (as defined in the `.nvmrc` file)
   - Used for dependency management and running the development server.
-  - **Download** from [Node.js official website](https://nodejs.org/).
-- **npm** (comes with Node.js installation)
+  - **Download** from the [official Node.js website](https://nodejs.org/).
+
+> \* If not using nvm, ensure the installed Node.js version matches the one specified in `.nvmrc`.
+
+#### Additional Tools
+
+- **npm**
+  - Comes bundled with Node.js.
   - Used to install project dependencies.
 - **Git**
   - Used for version control and cloning the repository.
-  - **Download** from [Git official website](https://git-scm.com/).
+  - **Download** from the [official Git website](https://git-scm.com/).
 
-### :mag: Verify Prerequisites
+### :mag: Verification
 
 **Open** the terminal (**CMD**) and **run** the following commands to confirm the required tools are installed on your machine:
 
@@ -93,7 +115,24 @@ After cloning the repository, navigate to the project directory using one of the
 
   **Open** your project folder using your preferred **IDE** (e.g., [Visual Studio Code](https://code.visualstudio.com/)) and open the integrated **terminal**.
 
-3. **Install Dependencies**
+3. **Using Node.js project version with .nvmrc file**
+
+   If you are using **nvm**, run the following command in the terminal to set the Node.js version as specified in the `.nvmrc` file:
+   - For Windows:
+
+   ```bash
+   nvm use $(type .nvmrc)
+   ```
+
+   - For macOS/Linux:
+
+   ```bash
+    nvm use
+   ```
+
+   This command will switch to the correct Node.js version for the project.
+
+4. **Install Dependencies**
 
    In the **terminal**, run the following command to **`install`** the project dependencies:
 
@@ -112,3 +151,7 @@ npm run dev
 ```
 
 This command will start the **Vite** development server and provide you with a local URL (usually `http://localhost:5173`) where you can view the project in your web browser.
+
+<p align="center">
+ <a href="#top">Back to top</a>
+</p>
