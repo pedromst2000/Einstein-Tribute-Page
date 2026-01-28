@@ -106,7 +106,7 @@ git --version
    ```bash
    git clone https://github.com/pedromst2000/Einstein-Tribute-Page.git
    ```
-  
+
 2. **Navigate to the Project Directory**
 
 After cloning the repository, navigate to the project directory using one of the following methods:
@@ -130,7 +130,6 @@ After cloning the repository, navigate to the project directory using one of the
 3. **Using Node.js project version with .nvmrc file**
 
    If you are using **nvm**, run the following command in the terminal to set the Node.js version as specified in the `.nvmrc` file:
- 
    - For Windows:
 
     <br>
@@ -149,7 +148,7 @@ After cloning the repository, navigate to the project directory using one of the
 
    This command will switch to the correct Node.js version for the project.
 
-3. **Install Dependencies**
+4. **Install Dependencies**
 
    In the **terminal**, run the following command to **`install`** the project dependencies:
 
