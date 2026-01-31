@@ -2,9 +2,8 @@
 
 /* Custom Colors */
 @theme {
-  --color-primary: #151414;
-  --color-accent: #ffffff;
-  --color-green-250: #a8d5ba;
+  --text-primary: #ffffff;
+  --text-secondary: #151414;
 
   /* Custom Fonts */
   --font-family-piazzola-black: "Piazzola-Black";
