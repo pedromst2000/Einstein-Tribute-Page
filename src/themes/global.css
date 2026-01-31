@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Custom Colors */
+@theme {
+  --color-primary: #151414;
+  --color-accent: #ffffff;
+  --color-green-250: #a8d5ba;
+
+  /* Custom Fonts */
+  --font-family-piazzola-black: "Piazzola-Black";
+  --font-family-piazzola-bold: "Piazzola-Bold";
+  --font-family-piazzola-medium: "Piazzola-Medium";
+  --font-family-piazzola-regular: "Piazzola-Regular";
+  --font-family-smoochSans-bold: "SmoochSans-Bold";
+  --font-family-smoochSans-medium: "SmoochSans-Medium";
+  --font-family-smoochSans-regular: "SmoochSans-Regular";
+  --font-family-smoochSans-semi-bold: "SmoochSans-SemiBold";
+}
+
+/* Font Face Declarations */
+@font-face {
+  font-family: "Piazzola-Black";
+  src: url("./assets/fonts/Piazzola-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Piazzola-Bold";
+  src: url("./assets/fonts/Piazzola-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Piazzola-Medium";
+  src: url("./assets/fonts/Piazzola-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Piazzola-Regular";
+  src: url("./assets/fonts/Piazzola-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SmoochSans-Bold";
+  src: url("./assets/fonts/SmoochSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SmoochSans-Medium";
+  src: url("./assets/fonts/SmoochSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SmoochSans-Regular";
+  src: url("./assets/fonts/SmoochSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SmoochSans-SemiBold";
+  src: url("./assets/fonts/SmoochSans-SemiBold.ttf") format("truetype");
+}
