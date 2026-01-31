@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "year": "1879",
+      "description": "Albert Einstein born on March 14 in Ulm, in the Kingdom of Württemberg in the German Empire."
+    },
+    {
+      "id": 2,
+      "year": "1889",
+      "description": "Einstein's family moves to Munich, Germany."
+    },
+    {
+      "id": 3,
+      "year": "1896-1900",
+      "description": "Attends the Swiss Federal Institute of Technology in Zurich, Switzerland."
+    },
+    {
+      "id": 4,
+      "year": "1901",
+      "description": "Graduates from the Swiss Federal Institute of Technology with a degree in physics."
+    },
+    {
+      "id": 5,
+      "year": "1905",
+      "description": "Published the theory of relativity."
+    },
+    {
+      "id": 6,
+      "year": "1915",
+      "description": "Publishes his general theory of relativity, which explains gravity as a curvature of spacetime."
+    },
+    {
+      "id": 7,
+      "year": "1916",
+      "description": "Completes the mathematics of general relativity."
+    },
+    {
+      "id": 8,
+      "year": "1921",
+      "description": "Awarded the Nobel Prize in Physics for his explanation of the photoelectric effect."
+    },
+    {
+      "id": 9,
+      "year": "1933",
+      "description": "Emigrates to the United States due to the rise of Nazi Germany and settles in Princeton, New Jersey, where he joins the Institute for Advanced Study."
+    },
+    {
+      "id": 10,
+      "year": "1940",
+      "description": "Becomes a U.S. citizen."
+    },
+    {
+      "id": 11,
+      "year": "1952",
+      "description": "Declines the Israeli presidency offer."
+    },
+    {
+      "id": 12,
+      "year": "1955",
+      "description": "Dies of heart failure on April 18 in Princeton, New Jersey, at the age of 76."
+    }
+  ]
+}
