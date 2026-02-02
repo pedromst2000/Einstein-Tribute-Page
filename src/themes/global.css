@@ -2,57 +2,66 @@
 
 /* Custom Colors */
 @theme {
-  --text-primary: #ffffff;
-  --text-secondary: #151414;
+  --color-primary: #ffffff;
+  --color-secondary: #151414;
+  --bg-img: #251b11;
 
   /* Custom Fonts */
-  --font-family-piazzola-black: "Piazzola-Black";
-  --font-family-piazzola-bold: "Piazzola-Bold";
-  --font-family-piazzola-medium: "Piazzola-Medium";
-  --font-family-piazzola-regular: "Piazzola-Regular";
-  --font-family-smoochSans-bold: "SmoochSans-Bold";
-  --font-family-smoochSans-medium: "SmoochSans-Medium";
-  --font-family-smoochSans-regular: "SmoochSans-Regular";
-  --font-family-smoochSans-semi-bold: "SmoochSans-SemiBold";
+  --font-piazzolla-black: "Piazzolla-Black";
+  --font-piazzolla-bold: "Piazzolla-Bold";
+  --font-piazzolla-medium: "Piazzolla-Medium";
+  --font-piazzolla-regular: "Piazzolla-Regular";
+  --font-smoochSans-bold: "SmoochSans-Bold";
+  --font-smoochSans-medium: "SmoochSans-Medium";
+  --font-smoochSans-regular: "SmoochSans-Regular";
+  --font-smoochSans-semi-bold: "SmoochSans-SemiBold";
 }
 
 /* Font Face Declarations */
 @font-face {
-  font-family: "Piazzola-Black";
-  src: url("./assets/fonts/Piazzola-Black.ttf") format("truetype");
+  font-family: "Piazzolla-Black";
+  src: url("/src/assets/fonts/Piazzolla-Black.ttf") format("truetype");
+  /* font-weight: 900; */
 }
 
 @font-face {
-  font-family: "Piazzola-Bold";
-  src: url("./assets/fonts/Piazzola-Bold.ttf") format("truetype");
+  font-family: "Piazzolla-Bold";
+  src: url("/src/assets/fonts/Piazzolla-Bold.ttf") format("truetype");
+  /* font-weight: 700; */
 }
 
 @font-face {
-  font-family: "Piazzola-Medium";
-  src: url("./assets/fonts/Piazzola-Medium.ttf") format("truetype");
+  font-family: "Piazzolla-Medium";
+  src: url("/src/assets/fonts/Piazzolla-Medium.ttf") format("truetype");
+  /* font-weight: 500; */
 }
 
 @font-face {
-  font-family: "Piazzola-Regular";
-  src: url("./assets/fonts/Piazzola-Regular.ttf") format("truetype");
+  font-family: "Piazzolla-Regular";
+  src: url("/src/assets/fonts/Piazzolla-Regular.ttf") format("truetype");
+  /* font-weight: 400; */
 }
 
 @font-face {
   font-family: "SmoochSans-Bold";
-  src: url("./assets/fonts/SmoochSans-Bold.ttf") format("truetype");
+  src: url("/src/assets/fonts/SmoochSans-Bold.ttf") format("truetype");
+  /* font-weight: 700; */
 }
 
 @font-face {
   font-family: "SmoochSans-Medium";
-  src: url("./assets/fonts/SmoochSans-Medium.ttf") format("truetype");
+  src: url("/src/assets/fonts/SmoochSans-Medium.ttf") format("truetype");
+  /* font-weight: 500; */
 }
 
 @font-face {
   font-family: "SmoochSans-Regular";
-  src: url("./assets/fonts/SmoochSans-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/SmoochSans-Regular.ttf") format("truetype");
+  /* font-weight: 400; */
 }
 
 @font-face {
   font-family: "SmoochSans-SemiBold";
-  src: url("./assets/fonts/SmoochSans-SemiBold.ttf") format("truetype");
+  src: url("/src/assets/fonts/SmoochSans-SemiBold.ttf") format("truetype");
+  /* font-weight: 600; */
 }
