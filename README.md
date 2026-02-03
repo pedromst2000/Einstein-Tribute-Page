@@ -1,3 +1,9 @@
+<!-- [] - Add Deployment Instructions
+    [] - Add Testing Instructions
+    [] - Add Contribution Guidelines
+    [] - Add live demo link
+    [] - Add concluding remarks for the end of the README
+-->
 <div align="center" id="top">
   <h1>Albert Einstein</h1>
   <p>
@@ -14,12 +20,32 @@
 - [:sparkles: UI Preview](#sparkles-ui-preview)
 - [:computer: Tech Stack](#computer-tech-stack)
 - [:rocket: Getting Started](#rocket-getting-started)
+  - [:clipboard: Prerequisites](#clipboard-prerequisites)
+  - [:mag: Verification](#mag-verification)
+  - [:inbox_tray: Installation Steps](#inbox_tray-installation-steps)
+  - [:arrow_forward: Available Commands](#arrow_forward-available-commands)
+  - [:books: Quick Reference](#books-quick-reference)
 
  <br>
 
 ## :bulb: About
 
-A modern tribute `landing page` for `Albert Einstein`, built with **React**, **TypeScript**, and **Tailwind CSS**. Showcases responsive design and a clean UI, while highlighting Einstein’s life and achievements.
+A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, one of the greatest minds in human history. This project showcases his life story, achievements, and legacy through an elegant and interactive user interface.
+
+**Built with modern technologies:**
+
+- ⚛️ **React 19** - Latest React features for optimal performance
+- 📘 **TypeScript** - Type-safe development
+- 🎨 **Tailwind CSS v4** - Modern utility-first styling with custom theming
+- 🧭 **React Router v7** - Client-side routing for seamless navigation
+
+**Features:**
+
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🎯 Three main sections: Hero, Biography, and Timeline
+- ⚡ Fast performance with Vite build tool
+- ♿ Accessibility-focused UI components
+- 🎨 Custom typography with Piazzolla and Smooch Sans fonts
 
  <br>
  
@@ -33,12 +59,31 @@ Comming Soon...
 
 ## :computer: Tech Stack
 
-- [React](https://reactjs.org/) (**Frontend Framework**)
-- [TypeScript](https://www.typescriptlang.org/) (**Programming Language**)
-- [Vite](https://vitejs.dev/) (**Build Tool**)
-- [Tailwind CSS](https://tailwindcss.com/) (**CSS Framework**)
-- [ESLint](https://eslint.org/) (**Linting Tool**)
-- [Prettier](https://prettier.io/) (**Code Formatter**)
+### Core Technologies
+
+- [React 19](https://reactjs.org/) - Frontend UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Vite 7](https://vitejs.dev/) - Next-generation build tool
+
+### Styling & UI
+
+- [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
+- Custom fonts: Piazzolla & Smooch Sans
+
+### Routing
+
+- [React Router v7](https://reactrouter.com/) - Client-side routing
+
+### Code Quality
+
+- [ESLint 9](https://eslint.org/) - JavaScript/TypeScript linter
+- [Prettier](https://prettier.io/) - Code formatter
+- TypeScript strict mode - Type checking
+
+### Development Tools
+
+- [Node.js 24.13.0](https://nodejs.org/) - JavaScript runtime
+- npm - Package manager
 
  <br>
 
@@ -99,76 +144,162 @@ git --version
 
 ### :inbox_tray: Installation Steps
 
-1. **Clone the Repository**
+Follow these steps to get the project running on your local machine.
 
-   **Open** your **terminal** and run the following command to `clone` the repository:
+---
 
-   ```bash
-   git clone https://github.com/pedromst2000/Einstein-Tribute-Page.git
-   ```
+#### **Step 1: Clone the Repository**
 
-2. **Navigate to the Project Directory**
+Open your terminal and run:
 
-After cloning the repository, navigate to the project directory using one of the following methods:
+```bash
+git clone https://github.com/pedromst2000/Einstein-Tribute-Page.git
+cd Einstein-Tribute-Page
+```
 
-- **Method 1: Using the Address Bar**
+> 💡 **Tip:** You can also navigate to the folder using [these alternative methods](#terminal-navigation).
 
-  <img src="./images/support-doc/adress-bar-cmd.png" width="300" height="250" alt="adress-bar-cmd">
+---
 
-  **Open** the repository folder and **write** `cmd` in the address bar to open the terminal directly in that folder.
+#### **Step 2: Set Node.js Version**
 
-- **Method 2: Using Right-Click Menu**
+**If using nvm (recommended):**
 
-  <img src="./images/support-doc/open-terminal.png" width="250" height="250" alt="open-terminal">
+- **Windows:**
 
-  **Open** the repository folder and **right-click** inside the folder, then select **"Open in Terminal"** or **"Open in PowerShell"** (depending on your system).
+  ```bash
+  nvm use $(type .nvmrc)
+  ```
 
-- **Method 3: Using Your IDE**
+- **macOS/Linux:**
+  ```bash
+  nvm use
+  ```
 
-  **Open** your project folder using your preferred **IDE** (e.g., [Visual Studio Code](https://code.visualstudio.com/)) and open the integrated **terminal**.
+**If using manual Node.js installation:**
 
-3. **Using Node.js project version with .nvmrc file**
+Skip this step - just ensure you have Node.js `24.13.0` installed ([verify](#mag-verification))
 
-   If you are using **nvm**, run the following command in the terminal to set the Node.js version as specified in the `.nvmrc` file:
-   - For Windows:
+---
 
-    <br>
+#### **Step 3: Install Dependencies**
 
-   ```bash
-   nvm use $(type .nvmrc)
-   ```
+Run this command to install all required packages:
 
-   - For macOS/Linux:
+```bash
+npm install
+```
 
-   <br>
+⏳ **Wait for the installation to complete** before running any other commands.
 
-   ```bash
-    nvm use
-   ```
+---
 
-   This command will switch to the correct Node.js version for the project.
+#### **Step 4: Start Development Server**
 
-4. **Install Dependencies**
-
-   In the **terminal**, run the following command to **`install`** the project dependencies:
-
-   ```bash
-   npm install
-   ```
-
-   This command reads the `package.json` file and installs all the required packages listed under `dependencies` and `devDependencies`.
-
- <br>
-
-### :arrow_forward: **Start the Development Server**
-
-After the dependencies are installed, start the development server by running the following command in the terminal:
+You're ready to start coding! Run:
 
 ```bash
 npm run dev
 ```
 
-This command will start the **Vite** development server and provide you with a local URL (usually `http://localhost:5173`) where you can view the project in your web browser.
+🎉 Open `http://localhost:5173` in your browser to see the project.
+
+---
+
+<details id="terminal-navigation">
+<summary><strong>📂 Alternative Ways to Open Terminal in Project Directory</strong></summary>
+
+<br>
+
+**Method 1: Address Bar (Windows)**
+
+<img src="./images/support-doc/adress-bar-cmd.png" width="300" height="250" alt="adress-bar-cmd">
+
+Type `cmd` in the folder's address bar
+
+**Method 2: Right-Click Menu**
+
+<img src="./images/support-doc/open-terminal.png" width="250" height="250" alt="open-terminal">
+
+Right-click → **"Open in Terminal"** or **"Open in PowerShell"**
+
+**Method 3: IDE Terminal**
+
+Open the project in [Visual Studio Code](https://code.visualstudio.com/) and use the integrated terminal
+
+</details>
+
+ <br>
+
+### :arrow_forward: **Available Commands**
+
+After the dependencies are installed, you can use the following commands to **develop**, **build**, and **maintain** the project:
+
+#### **Development Server**
+
+Start the development server to work on the project locally:
+
+```bash
+npm run dev
+```
+
+- Starts the **Vite** development server
+- Provides a local URL (usually `http://localhost:5173`)
+- Enables **hot module replacement** (HMR) for instant updates
+- Press `h + enter` in the terminal to show help options
+
+#### **Production Build**
+
+Build the project for production deployment:
+
+```bash
+npm run build
+```
+
+- Runs **TypeScript** type checking (`tsc -b`)
+- Creates an optimized production build in the `dist/` folder
+- Minifies and bundles all assets for deployment
+- **Run this before deploying to production**
+
+#### **Code Quality**
+
+Maintain code quality with linting and formatting:
+
+```bash
+npm run lint
+```
+
+- Runs **ESLint** to check for code quality issues
+- Identifies potential bugs and code style violations
+- **Run before committing** to ensure code standards
+
+```bash
+npm run prettier
+```
+
+- Formats all source files using **Prettier**
+- Automatically fixes formatting issues (indentation, line endings, etc.)
+- Ensures consistent code style across the project
+
+```bash
+npm run prettier-check
+```
+
+- Checks if files are formatted correctly **without modifying** them
+- Useful for **CI/CD pipelines** to verify formatting
+- Returns error if any files need formatting
+
+ <br>
+
+### :books: **Quick Reference**
+
+| Command                  | Purpose                  | When to Use                |
+| ------------------------ | ------------------------ | -------------------------- |
+| `npm run dev`            | Start development server | Daily development work     |
+| `npm run build`          | Build for production     | Before deployment          |
+| `npm run lint`           | Check code quality       | Before committing changes  |
+| `npm run prettier`       | Format all files         | Fix formatting issues      |
+| `npm run prettier-check` | Verify formatting        | CI/CD or pre-commit checks |
 
  <br>
 
