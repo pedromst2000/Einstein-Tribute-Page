@@ -320,17 +320,7 @@ git push origin <branch-name>
 
 This project is licensed under the **MIT License**.
 
-You are free to:
-
-- ✅ Use this project for personal or commercial purposes
-- ✅ Modify and distribute the code
-- ✅ Use it as a learning resource
-
-**Requirements:**
-
-- Include the original license and copyright notice in any copy or substantial portion of the software
-
-For full license details, see the [LICENSE](LICENSE) file.
+See the [LICENSE](LICENSE) file for details.
 
  <br>
 
