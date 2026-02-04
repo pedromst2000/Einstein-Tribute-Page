@@ -1,17 +1,22 @@
 <!-- [] - Add Deployment Instructions
     [] - Add Testing Instructions
-    [] - Add Contribution Guidelines
     [] - Add live demo link
-    [] - Add concluding remarks for the end of the README
 -->
 <div align="center" id="top">
+    <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
+
   <h1>Albert Einstein</h1>
   <p>
     "
     "Life is like riding a bicycle. To keep your balance you must keep moving."
 
   </p>
-  <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
+  
+  <p>
+    <a href="https://github.com/pedromst2000/Einstein-Tribute-Page/issues/new?labels=bug&template=bug_report.md">Report Bug</a>
+    ·
+    <a href="https://github.com/pedromst2000/Einstein-Tribute-Page/issues/new?labels=enhancement&template=feature_request.md">Request Feature</a>
+  </p>
 </div>
 
 ## Table of Contents
@@ -24,7 +29,7 @@
   - [:mag: Verification](#mag-verification)
   - [:inbox_tray: Installation Steps](#inbox_tray-installation-steps)
   - [:arrow_forward: Available Commands](#arrow_forward-available-commands)
-  - [:books: Quick Reference](#books-quick-reference)
+- [:handshake: Contributing](#handshake-contributing)
 
  <br>
 
@@ -45,7 +50,6 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 - 🎯 Three main sections: Hero, Biography, and Timeline
 - ⚡ Fast performance with Vite build tool
 - ♿ Accessibility-focused UI components
-- 🎨 Custom typography with Piazzolla and Smooch Sans fonts
 
  <br>
  
@@ -68,7 +72,6 @@ Comming Soon...
 ### Styling & UI
 
 - [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
-- Custom fonts: Piazzolla & Smooch Sans
 
 ### Routing
 
@@ -159,6 +162,8 @@ cd Einstein-Tribute-Page
 
 > 💡 **Tip:** You can also navigate to the folder using [these alternative methods](#terminal-navigation).
 
+> To make changes or contribute, consider forking the repository first and then cloning your fork. Check the [Contributing section](#handshake-contributing) for detailed instructions.
+
 ---
 
 #### **Step 2: Set Node.js Version**
@@ -235,74 +240,95 @@ Open the project in [Visual Studio Code](https://code.visualstudio.com/) and use
 
 After the dependencies are installed, you can use the following commands to **develop**, **build**, and **maintain** the project:
 
-#### **Development Server**
-
-Start the development server to work on the project locally:
-
-```bash
-npm run dev
-```
-
-- Starts the **Vite** development server
-- Provides a local URL (usually `http://localhost:5173`)
-- Enables **hot module replacement** (HMR) for instant updates
-- Press `h + enter` in the terminal to show help options
-
-#### **Production Build**
-
-Build the project for production deployment:
-
-```bash
-npm run build
-```
-
-- Runs **TypeScript** type checking (`tsc -b`)
-- Creates an optimized production build in the `dist/` folder
-- Minifies and bundles all assets for deployment
-- **Run this before deploying to production**
-
-#### **Code Quality**
-
-Maintain code quality with linting and formatting:
-
-```bash
-npm run lint
-```
-
-- Runs **ESLint** to check for code quality issues
-- Identifies potential bugs and code style violations
-- **Run before committing** to ensure code standards
-
-```bash
-npm run prettier
-```
-
-- Formats all source files using **Prettier**
-- Automatically fixes formatting issues (indentation, line endings, etc.)
-- Ensures consistent code style across the project
-
-```bash
-npm run prettier-check
-```
-
-- Checks if files are formatted correctly **without modifying** them
-- Useful for **CI/CD pipelines** to verify formatting
-- Returns error if any files need formatting
+| Type                   | Command                  | Purpose                 | Details                                             |
+| ---------------------- | ------------------------ | ----------------------- | --------------------------------------------------- |
+| **Development Server** | `npm run dev`            | Start local development | Vite dev server with HMR at `http://localhost:5173` |
+| **Production Build**   | `npm run build`          | Build for production    | TypeScript check + optimized build in `dist/`       |
+| **Code Quality**       | `npm run lint`           | Check code quality      | ESLint validation for bugs and style issues         |
+| **Code Quality**       | `npm run prettier`       | Format all files        | Auto-fix formatting (indentation, line endings)     |
+| **Code Quality**       | `npm run prettier-check` | Verify formatting       | Check formatting without modifying files            |
 
  <br>
 
-### :books: **Quick Reference**
+## :handshake: Contributing
 
-| Command                  | Purpose                  | When to Use                |
-| ------------------------ | ------------------------ | -------------------------- |
-| `npm run dev`            | Start development server | Daily development work     |
-| `npm run build`          | Build for production     | Before deployment          |
-| `npm run lint`           | Check code quality       | Before committing changes  |
-| `npm run prettier`       | Format all files         | Fix formatting issues      |
-| `npm run prettier-check` | Verify formatting        | CI/CD or pre-commit checks |
+Contributions are welcome! Follow this workflow to submit changes.
+
+### Fork vs Clone - Which One?
+
+Choose the right approach based on your goal:
+
+| Goal                               | Action                           | Instructions                                   |
+| ---------------------------------- | -------------------------------- | ---------------------------------------------- |
+| **Just exploring/testing locally** | Clone directly                   | See [Getting Started](#rocket-getting-started) |
+| **Contributing changes**           | Fork first, then clone your fork | Follow steps below ⬇️                          |
+
+### Naming Conventions
+
+Follow these **conventions** for branches and commit messages to keep the project organized:
+
+| Type       | Use Case         | Branch Example          | Commit Example                      |
+| ---------- | ---------------- | ----------------------- | ----------------------------------- |
+| `feat`     | New feature      | `feat/timeline-nav`     | `feat: add timeline navigation`     |
+| `fix`      | Bug fix          | `fix/mobile-overflow`   | `fix: resolve mobile menu overflow` |
+| `docs`     | Documentation    | `docs/update-readme`    | `docs: update installation steps`   |
+| `refactor` | Code restructure | `refactor/hero-section` | `refactor: simplify hero logic`     |
+| `style`    | Formatting       | `style/format-imports`  | `style: organize imports`           |
+| `test`     | Tests            | `test/timeline-tests`   | `test: add timeline tests`          |
+| `chore`    | Maintenance      | `chore/update-deps`     | `chore: update dependencies`        |
+
+### Quick Contribution Guide
+
+**Standard workflow:**
+
+```bash
+# 1. Fork on GitHub, then clone your fork
+git clone https://github.com/YOUR_USERNAME/Einstein-Tribute-Page.git
+cd Einstein-Tribute-Page
+
+# 2. Create a branch (follow naming convention above)
+git checkout -b <type>/<description>
+
+# 3. Commit and push
+git add .
+git commit -m "<type>: <description>"
+git push origin <branch-name>
+```
+
+> Publish your branch to your fork on GitHub, then proceed to the next step.
+
+**Then open a Pull Request on GitHub** with:
+
+- Title matching your commit type (e.g., `feat: add dark mode`)
+- Description of what changed and why
+- Screenshots for UI changes
+
+**Before submitting:**
+
+- ✅ `npm run lint` and `npm run build` pass
+- ✅ Code formatted with `npm run prettier`
+- ✅ Tested on different screen sizes
+
+**Questions?** Open an issue for guidance. Thanks for contributing! 🎉
 
  <br>
 
-<p align="center">
- <a href="#top">Back to top</a>
-</p>
+---
+
+<div align="center">
+
+## 🌟 Final Thoughts
+
+This project is a tribute to **Albert Einstein** - a celebration of curiosity, innovation, and the pursuit of knowledge. Built with modern web technologies, it aims to inspire developers and visitors alike to appreciate both **scientific excellence** and **clean code craftsmanship**.
+
+Whether you're here to **learn**, **contribute**, or simply **explore** - your presence makes this project better.
+
+**Keep moving forward.** 🚀
+
+---
+
+Made with ❤️ and curiosity
+
+[⬆ Back to top](#top)
+
+</div>
