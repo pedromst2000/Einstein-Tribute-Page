@@ -1,6 +1,6 @@
 <!-- [] - Add Deployment Instructions
     [] - Add Testing Instructions
-    [] - Improve PR submission notes
+    [] - Improve PR submission notes (add the pipeline checks info)
     [] - Add live demo link
     [] - Add CI/CD pipelines for linting and prettier checks before mergin PR
 -->
@@ -89,7 +89,7 @@ Comming Soon...
 ### Development Tools
 
 - [Node.js 24.13.0](https://nodejs.org/) - JavaScript runtime
-- npm - Package manager
+- [npm](https://www.npmjs.com/) - Package manager
 
  <br>
 
@@ -102,43 +102,25 @@ Follow these **steps** to set up and `run` the project locally.
 
 ### :clipboard: Prerequisites
 
-Make sure you have the following installed on your machine before proceeding:
+**Choose one option for Node.js:**
 
-#### Option 1: Using nvm (Node Version Manager) - Recommended
+- **Option A (Recommended): nvm** - Installs Node.js automatically via `.nvmrc`
+  - **Download** for Windows: [nvm-windows](https://www.nvmnode.com/guide/installation.html)
+  - **Download** for macOS/Linux: [nvm-sh](https://www.nvmnode.com/guide/installation-sh.html)
+- **Option B: Node.js 24.13.0** - [Download](https://nodejs.org/) (manual install)
 
-- **nvm**\*
-  - Used to install and manage the Node.js version required by this project.
-  - Allows easy switching between Node.js versions.
-  - Downloads and installs Node.js automatically based on the version defined in the `.nvmrc` file.
-  - **Download:**
-    - [Windows](https://www.nvmnode.com/guide/installation.html)
-    - [macOS/Linux](https://www.nvmnode.com/guide/installation-sh.html)
+**Also required:**
 
-> \* When using **nvm**, you do **not** need to install Node.js manually. Check the [documentation](https://www.nvmnode.com/guide/) for more details.
+- **npm** - Bundled with Node.js
+- **Git** - [Download](https://git-scm.com/)
 
-#### Option 2: Manual Installation
-
-- **Node.js**\*
-  - Required version: `24.13.0` (as defined in the `.nvmrc` file)
-  - Used for dependency management and running the development server.
-  - **Download** from the [official Node.js website](https://nodejs.org/).
-
-> \* If not using nvm, ensure the installed Node.js version matches the one specified in `.nvmrc`.
-
-#### Additional Tools
-
-- **npm**
-  - Comes bundled with Node.js.
-  - Used to install project dependencies.
-- **Git**
-  - Used for version control and cloning the repository.
-  - **Download** from the [official Git website](https://git-scm.com/).
+> 💡 **nvm** reads `.nvmrc` to install/switch Node.js versions.
 
 ---
 
 ### :mag: Verification
 
-**Open** the terminal (**CMD**) and **run** the following commands to confirm the required tools are installed on your machine:
+Open the terminal and run the following commands to verify the required tools are installed:
 
 ```bash
 node -v
@@ -152,104 +134,71 @@ git --version
 
 Follow these steps to get the project running on your local machine.
 
----
+Open your terminal and run the following commands:
 
 #### **Step 1: Clone the Repository**
 
-Open your terminal and run:
-
 ```bash
 git clone https://github.com/pedromst2000/Einstein-Tribute-Page.git
+```
+
+#### **Step 2: Navigate to Project Directory**
+
+```bash
 cd Einstein-Tribute-Page
 ```
 
-> 💡 **Tip:** You can also navigate to the folder using [these alternative methods](#terminal-navigation).
+> 💡 **Tip:** Can't find the project directory in your terminal? Open the folder directly in your code editor (e.g., VS Code) and use the integrated terminal, or right-click the folder in your file explorer and select **"Open in Terminal"** / **"Git Bash Here"**.
 
-> To make changes or contribute, consider forking the repository first and then cloning your fork. Check the [Contributing section](#handshake-contributing) for detailed instructions.
+#### **Step 3: Set Node.js Version (if using nvm)**
 
----
+Check the `.nvmrc` file for the required Node.js version, and then run the following commands to install and use that version:
 
-#### **Step 2: Set Node.js Version**
+```bash
+nvm install v24.13.0
+```
 
-**If using nvm (recommended):**
+- Windows
 
-- **Windows:**
+```bash
+nvm use $(type .nvmrc)
+```
 
-  ```bash
-  nvm use $(type .nvmrc)
-  ```
+- macOS/Linux
 
-- **macOS/Linux:**
-  ```bash
-  nvm use
-  ```
+```bash
+nvm use
+```
 
-**If using manual Node.js installation:**
+> 💡 **Tip:** If you don't have `nvm` installed, you can skip this step. Just ensure you have Node.js 24.13.0 installed globally ([verify](#mag-verification)).
 
-Skip this step - just ensure you have Node.js `24.13.0` installed ([verify](#mag-verification))
-
----
-
-#### **Step 3: Install Dependencies**
-
-Run this command to install all required packages:
+#### **Step 4: Install Dependencies**
 
 ```bash
 npm install
 ```
 
-⏳ **Wait for the installation to complete** before running any other commands.
-
----
-
-#### **Step 4: Start Development Server**
-
-You're ready to start coding! Run:
+#### **Step 5: Start Development Server**
 
 ```bash
 npm run dev
 ```
 
-🎉 Open `http://localhost:5173` in your browser to see the project.
+🎉 Open `http://localhost:5173` in your browser.
+
+> 💡 **Contributing?** Fork the repository first. See [Contributing](#handshake-contributing).
 
 ---
 
-<details id="terminal-navigation">
-<summary><strong>📂 Alternative Ways to Open Terminal in Project Directory</strong></summary>
+### :arrow_forward: Available Commands
 
-<br>
-
-**Method 1: Address Bar (Windows)**
-
-<img src="./images/support-doc/adress-bar-cmd.png" width="300" height="250" alt="adress-bar-cmd">
-
-Type `cmd` in the folder's address bar
-
-**Method 2: Right-Click Menu**
-
-<img src="./images/support-doc/open-terminal.png" width="250" height="250" alt="open-terminal">
-
-Right-click → **"Open in Terminal"** or **"Open in PowerShell"**
-
-**Method 3: IDE Terminal**
-
-Open the project in [Visual Studio Code](https://code.visualstudio.com/) and use the integrated terminal
-
-</details>
-
- <br>
-
-### :arrow_forward: **Available Commands**
-
-After the dependencies are installed, you can use the following commands to **develop**, **build**, and **maintain** the project:
-
-| Type                   | Command                  | Purpose                 | Details                                             |
-| ---------------------- | ------------------------ | ----------------------- | --------------------------------------------------- |
-| **Development Server** | `npm run dev`            | Start local development | Vite dev server with HMR at `http://localhost:5173` |
-| **Production Build**   | `npm run build`          | Build for production    | TypeScript check + optimized build in `dist/`       |
-| **Code Quality**       | `npm run lint`           | Check code quality      | ESLint validation for bugs and style issues         |
-| **Code Quality**       | `npm run prettier`       | Format all files        | Auto-fix formatting (indentation, line endings)     |
-| **Code Quality**       | `npm run prettier-check` | Verify formatting       | Check formatting without modifying files            |
+| Command                  | Purpose                 | Details                                             |
+| ------------------------ | ----------------------- | --------------------------------------------------- |
+| `npm run dev`            | Start local development | Vite dev server with HMR at `http://localhost:5173` |
+| `npm run build`          | Build for production    | TypeScript check + optimized build in `dist/`       |
+| `npm run lint`           | Check code quality      | ESLint validation for bugs and style issues         |
+| `npm run prettier`       | Format all files        | Auto-fix formatting (indentation, line endings)     |
+| `npm run prettier-check` | Verify formatting       | Check formatting without modifying files            |
 
  <br>
 
@@ -282,39 +231,22 @@ Follow these **conventions** for branches and commit messages to keep the projec
 
 ### Quick Contribution Guide
 
-**Standard workflow:**
+1. **Fork** the repository on GitHub
+2. **Clone** your fork and create a branch: `git checkout -b <type>/<description>`
+3. Make changes and commit: `git commit -m "<type>: <description>"`
+4. Push and open a Pull Request
 
-```bash
-# 1. Fork on GitHub, then clone your fork
-git clone https://github.com/YOUR_USERNAME/Einstein-Tribute-Page.git
-cd Einstein-Tribute-Page
+**PR Requirements:**
 
-# 2. Create a branch (follow naming convention above)
-git checkout -b <type>/<description>
-
-# 3. Commit and push
-git add .
-git commit -m "<type>: <description>"
-git push origin <branch-name>
-```
-
-> Publish your branch to your fork on GitHub, then proceed to the next step.
-
-**Then open a Pull Request on GitHub** with:
-
-- Title matching your commit type (e.g., `feat: add dark mode`)
-- Description of what changed and why
-- Screenshots for UI changes
-
-**Before submitting:**
-
+- ✅ Title follows [naming convention](#naming-conventions)
+- ✅ Description explains changes
+- ✅ Screenshots for UI changes
 - ✅ `npm run lint` and `npm run build` pass
 - ✅ Code formatted with `npm run prettier`
-- ✅ Tested on different screen sizes
 
-**Questions?** Open an issue for guidance. Thanks for contributing! 🎉
+**Questions?** Open an issue. Thanks for contributing! 🎉
 
- <br>
+<br>
 
 ## :page_facing_up: License
 
@@ -322,17 +254,9 @@ This project is licensed under the **MIT License**.
 
 See the [LICENSE](LICENSE) file for details.
 
- <br>
-
 ---
 
 <div align="center">
-
-## 🌟 Final Thoughts
-
-This project is a tribute to **Albert Einstein** - a celebration of curiosity, innovation, and the pursuit of knowledge. Built with modern web technologies, it aims to inspire developers and visitors alike to appreciate both **scientific excellence** and **clean code craftsmanship**.
-
-Whether you're here to **learn**, **contribute**, or simply **explore** - your presence makes this project better.
 
 **Keep moving forward.** 🚀
 
