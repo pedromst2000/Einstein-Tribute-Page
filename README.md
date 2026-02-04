@@ -1,6 +1,8 @@
 <!-- [] - Add Deployment Instructions
     [] - Add Testing Instructions
+    [] - Improve PR submission notes
     [] - Add live demo link
+    [] - Add CI/CD pipelines for linting and prettier checks before mergin PR
 -->
 <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
@@ -30,6 +32,7 @@
   - [:inbox_tray: Installation Steps](#inbox_tray-installation-steps)
   - [:arrow_forward: Available Commands](#arrow_forward-available-commands)
 - [:handshake: Contributing](#handshake-contributing)
+- [:page_facing_up: License](#page_facing_up-license)
 
  <br>
 
@@ -310,6 +313,24 @@ git push origin <branch-name>
 - ✅ Tested on different screen sizes
 
 **Questions?** Open an issue for guidance. Thanks for contributing! 🎉
+
+ <br>
+
+## :page_facing_up: License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+- ✅ Use this project for personal or commercial purposes
+- ✅ Modify and distribute the code
+- ✅ Use it as a learning resource
+
+**Requirements:**
+
+- Include the original license and copyright notice in any copy or substantial portion of the software
+
+For full license details, see the [LICENSE](LICENSE) file.
 
  <br>
 
