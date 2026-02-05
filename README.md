@@ -1,10 +1,10 @@
-<!-- [] - Add Deployment Instructions
-    [] - Add Testing Instructions
+<!-- [] - Add Deployment Instructions (add to commands section)
+    [] - Add Testing Instructions (add to commands section)
     [] - Improve PR submission notes (add the pipeline checks info)
     [] - Add live demo link
     [] - Add CI/CD pipelines for linting and prettier checks before mergin PR
 -->
-<div align="center" id="top">
+  <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
 
   <h1>Albert Einstein</h1>
@@ -40,19 +40,19 @@
 
 A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, one of the greatest minds in human history. This project showcases his life story, achievements, and legacy through an elegant and interactive user interface.
 
-**Built with modern technologies:**
+**What you'll discover:**
 
-- ⚛️ **React 19** - Latest React features for optimal performance
-- 📘 **TypeScript** - Type-safe development
-- 🎨 **Tailwind CSS v4** - Modern utility-first styling with custom theming
-- 🧭 **React Router v7** - Client-side routing for seamless navigation
+- 🎓 **Comprehensive Biography** - Explore Einstein's journey from his early years to becoming a revolutionary physicist
+- 📅 **Interactive Timeline** - Navigate through key milestones, discoveries, and achievements in Einstein's life
+- 💡 **Legacy & Impact** - Learn about his contributions to physics, philosophy, and humanity
+- 🎨 **Elegant Design** - Experience a visually engaging tribute with modern aesthetics and smooth interactions
 
-**Features:**
+**Key Features:**
 
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- 🎯 Three main sections: Hero, Biography, and Timeline
-- ⚡ Fast performance with Vite build tool
-- ♿ Accessibility-focused UI components
+- 📱 Fully responsive design optimized for mobile, tablet, and desktop
+- ⚡ Fast, performant single-page application with client-side routing
+- ♿ Accessibility-focused UI for an inclusive user experience
+- 🎯 Three distinct sections: Hero with iconic quote, detailed Biography, and chronological Timeline
 
  <br>
  
@@ -243,6 +243,8 @@ Follow these **conventions** for branches and commit messages to keep the projec
 - ✅ Screenshots for UI changes
 - ✅ `npm run lint` and `npm run build` pass
 - ✅ Code formatted with `npm run prettier`
+- ✅ `npm run prettier-check` passes
+- ✅ No merge conflicts
 
 **Questions?** Open an issue. Thanks for contributing! 🎉
 
