@@ -54,15 +54,15 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 - ♿ Accessibility-focused UI for an inclusive user experience
 - 🎯 Three distinct sections: Hero with iconic quote, detailed Biography, and chronological Timeline
 
- <br>
- 
+<br>
+
 ## :sparkles: UI Preview
 
-Comming Soon...
+Coming Soon...
 
 (Will be updated with images of mockups and video demo)
 
- <br>
+<br>
 
 ## :computer: Tech Stack
 
@@ -192,13 +192,17 @@ npm run dev
 
 ### :arrow_forward: Available Commands
 
-| Command                  | Purpose                 | Details                                             |
-| ------------------------ | ----------------------- | --------------------------------------------------- |
-| `npm run dev`            | Start local development | Vite dev server with HMR at `http://localhost:5173` |
-| `npm run build`          | Build for production    | TypeScript check + optimized build in `dist/`       |
-| `npm run lint`           | Check code quality      | ESLint validation for bugs and style issues         |
-| `npm run prettier`       | Format all files        | Auto-fix formatting (indentation, line endings)     |
-| `npm run prettier-check` | Verify formatting       | Check formatting without modifying files            |
+| Command                  | Purpose                    | Details                                             |
+| ------------------------ | -------------------------- | --------------------------------------------------- |
+| `npm run dev`            | Start local development    | Vite dev server with HMR at `http://localhost:5173` |
+| `npm run build`          | Build for production       | TypeScript check + optimized build in `dist/`       |
+| `npm run lint`           | Lint JavaScript/TypeScript | ESLint validation for TS/JS files                   |
+| `npm run lint:html`      | Validate HTML              | Check HTML structure and syntax                     |
+| `npm run lint:md`        | Validate Markdown          | Check Markdown formatting and links                 |
+| `npm run lint:css`       | Validate CSS               | Check CSS syntax and best practices                 |
+| `npm run lint:all`       | Run all linters            | ESLint + HTML + Markdown + CSS validation           |
+| `npm run prettier`       | Format all files           | Auto-fix formatting (indentation, line endings)     |
+| `npm run prettier-check` | Verify formatting          | Check formatting without modifying files            |
 
  <br>
 
@@ -219,15 +223,19 @@ Choose the right approach based on your goal:
 
 Follow these **conventions** for branches and commit messages to keep the project organized:
 
-| Type       | Use Case         | Branch Example          | Commit Example                      |
-| ---------- | ---------------- | ----------------------- | ----------------------------------- |
-| `feat`     | New feature      | `feat/timeline-nav`     | `feat: add timeline navigation`     |
-| `fix`      | Bug fix          | `fix/mobile-overflow`   | `fix: resolve mobile menu overflow` |
-| `docs`     | Documentation    | `docs/update-readme`    | `docs: update installation steps`   |
-| `refactor` | Code restructure | `refactor/hero-section` | `refactor: simplify hero logic`     |
-| `style`    | Formatting       | `style/format-imports`  | `style: organize imports`           |
-| `test`     | Tests            | `test/timeline-tests`   | `test: add timeline tests`          |
-| `chore`    | Maintenance      | `chore/update-deps`     | `chore: update dependencies`        |
+| Type       | Use Case               | Branch Example          | Commit Example                      |
+| ---------- | ---------------------- | ----------------------- | ----------------------------------- |
+| `feat`     | New feature            | `feat/timeline-nav`     | `feat: add timeline navigation`     |
+| `fix`      | Bug fix                | `fix/mobile-overflow`   | `fix: resolve mobile menu overflow` |
+| `docs`     | Documentation          | `docs/update-readme`    | `docs: update installation steps`   |
+| `refactor` | Code restructure       | `refactor/hero-section` | `refactor: simplify hero logic`     |
+| `style`    | Formatting             | `style/format-imports`  | `style: organize imports`           |
+| `test`     | Tests                  | `test/timeline-tests`   | `test: add timeline tests`          |
+| `perf`     | Performance            | `perf/optimize-images`  | `perf: optimize image loading`      |
+| `build`    | Build system           | `build/update-vite`     | `build: upgrade to Vite 7`          |
+| `ci`       | CI/CD pipelines        | `ci/add-github-actions` | `ci: add lint workflow`             |
+| `chore`    | Maintenance            | `chore/update-deps`     | `chore: update dependencies`        |
+| `revert`   | Revert previous commit | `revert/feature-x`      | `revert: revert feat timeline-nav`  |
 
 ### Quick Contribution Guide
 
