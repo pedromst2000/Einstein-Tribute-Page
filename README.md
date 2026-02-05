@@ -236,12 +236,14 @@ Follow these **conventions** for branches and commit messages to keep the projec
 | `chore`    | Maintenance            | `chore/update-deps`     | `chore: update dependencies`        |
 | `revert`   | Revert previous commit | `revert/feature-x`      | `revert: revert feat timeline-nav`  |
 
-### Quick Contribution Guide
+### Contribution Workflow
 
-1. **Fork** the repository
-2. **Clone** your fork and create a branch: `git checkout -b <type>/<description>`
+1. **Get the code:**
+   - **External contributors:** Fork the repository, then clone your fork
+   - **Collaborators:** Clone the repository directly
+2. Create a branch: `git checkout -b <type>/<description>`
 3. Make changes and commit: `git commit -m "<type>: <description>"`
-4. Push to your branch: `git push origin <type>/<description>`
+4. Push your branch: `git push origin <type>/<description>`
 5. Open a **Pull Request**
 
 **PR Requirements:**
