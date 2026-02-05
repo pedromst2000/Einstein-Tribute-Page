@@ -35,11 +35,3 @@ jobs:
       - name: Build project
         run: npm run build
         continue-on-error: false
-
-      - name: Upload build artifacts
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-dist
-          path: dist/
-          retention-days: 7
