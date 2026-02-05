@@ -210,16 +210,13 @@ npm run dev
 
 ## :handshake: Contributing
 
-Contributions are welcome! Follow this workflow to submit changes.
+Your contributions help keep this tribute to Einstein alive and evolving! Whether you're fixing a typo, improving accessibility, adding historical content, or enhancing the user experience, every contribution matters.
 
-### Fork vs Clone - Which One?
+**How to contribute:**
 
-Choose the right approach based on your goal:
-
-| Goal                               | Action                           | Instructions                                   |
-| ---------------------------------- | -------------------------------- | ---------------------------------------------- |
-| **Just exploring/testing locally** | Clone directly                   | See [Getting Started](#rocket-getting-started) |
-| **Contributing changes**           | Fork first, then clone your fork | Follow steps below ⬇️                          |
+- Found a bug? [Report it](https://github.com/pedromst2000/Einstein-Tribute-Page/issues/new?labels=bug&template=bug_report.md)
+- Have an enhancement idea? [Suggest it](https://github.com/pedromst2000/Einstein-Tribute-Page/issues/new?labels=enhancement&template=feature_request.md)
+- Ready to code? Follow the workflow below to submit your changes
 
 ### Naming Conventions
 
@@ -241,10 +238,13 @@ Follow these **conventions** for branches and commit messages to keep the projec
 
 ### Quick Contribution Guide
 
-1. **Fork** the repository on GitHub
+1. **Fork** the repository
 2. **Clone** your fork and create a branch: `git checkout -b <type>/<description>`
 3. Make changes and commit: `git commit -m "<type>: <description>"`
-4. Push and open a Pull Request
+4. Push to your branch: `git push origin <type>/<description>`
+5. Open a **Pull Request** on GitHub
+   - **Into**: `pedromst2000/Einstein-Tribute-Page` → `master` branch (the original repository)
+   - **From**: `your-username/Einstein-Tribute-Page` → `<type>/<description>` branch (your fork)
 
 **PR Requirements:**
 
@@ -259,7 +259,7 @@ Follow these **conventions** for branches and commit messages to keep the projec
 
 > 💡 **CI/CD:** GitHub Actions automatically validates formatting, linting, and builds on every push/PR to `master`. Check the **Actions** tab for detailed results.
 
-**Questions?** Open an issue. Thanks for contributing! 🎉
+Thanks for contributing! 🎉
 
 <br>
 
