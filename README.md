@@ -1,8 +1,7 @@
 <!-- [] - Add Deployment Instructions (add to commands section)
     [] - Add Testing Instructions (add to commands section)
-    [] - Improve PR submission notes (add the pipeline checks info)
     [] - Add live demo link
-    [] - Add CI/CD pipelines for linting and prettier checks before mergin PR
+    [] - Add CD pipeline
 -->
   <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
@@ -148,7 +147,9 @@ git clone https://github.com/pedromst2000/Einstein-Tribute-Page.git
 cd Einstein-Tribute-Page
 ```
 
-> 💡 **Tip:** Can't find the project directory in your terminal? Open the folder directly in your code editor (e.g., VS Code) and use the integrated terminal, or right-click the folder in your file explorer and select **"Open in Terminal"** / **"Git Bash Here"**.
+> 💡 **Tip:** Can't find the project directory in your terminal? Open the folder directly in your code editor (e.g., VS Code) and use the integrated terminal, or right-click the folder in your file explorer and
+
+select **"Open in Terminal"** / **"Git Bash Here"**.
 
 #### **Step 3: Set Node.js Version (if using nvm)**
 
@@ -192,17 +193,18 @@ npm run dev
 
 ### :arrow_forward: Available Commands
 
-| Command                  | Purpose                    | Details                                             |
-| ------------------------ | -------------------------- | --------------------------------------------------- |
-| `npm run dev`            | Start local development    | Vite dev server with HMR at `http://localhost:5173` |
-| `npm run build`          | Build for production       | TypeScript check + optimized build in `dist/`       |
-| `npm run lint`           | Lint JavaScript/TypeScript | ESLint validation for TS/JS files                   |
-| `npm run lint:html`      | Validate HTML              | Check HTML structure and syntax                     |
-| `npm run lint:md`        | Validate Markdown          | Check Markdown formatting and links                 |
-| `npm run lint:css`       | Validate CSS               | Check CSS syntax and best practices                 |
-| `npm run lint:all`       | Run all linters            | ESLint + HTML + Markdown + CSS validation           |
-| `npm run prettier`       | Format all files           | Auto-fix formatting (indentation, line endings)     |
-| `npm run prettier-check` | Verify formatting          | Check formatting without modifying files            |
+| Command                  | Purpose                    | Details                                                  |
+| ------------------------ | -------------------------- | -------------------------------------------------------- |
+| `npm run dev`            | Start local development    | Vite dev server with HMR at `http://localhost:5173`      |
+| `npm run build`          | Build for production       | TypeScript check + optimized build in `dist/`            |
+| `npm run lint`           | Lint JavaScript/TypeScript | ESLint validation for TS/JS files                        |
+| `npm run lint:html`      | Validate HTML              | Check HTML structure and syntax                          |
+| `npm run lint:md`        | Validate Markdown          | Check Markdown formatting and links                      |
+| `npm run lint:css`       | Validate CSS               | Check CSS syntax and best practices                      |
+| `npm run lint:yaml`      | Validate YAML              | Check YAML syntax for GitHub Actions workflows           |
+| `npm run lint:all`       | Run all linters            | ESLint + HTML + Markdown + CSS + YAML validation         |
+| `npm run prettier`       | Format all files           | Auto-fix formatting (indentation, line endings)          |
+| `npm run prettier-check` | Verify formatting          | Check formatting without modifying files (used in CI/CD) |
 
  <br>
 
@@ -249,10 +251,13 @@ Follow these **conventions** for branches and commit messages to keep the projec
 - ✅ Title follows [naming convention](#naming-conventions)
 - ✅ Description explains changes
 - ✅ Screenshots for UI changes
-- ✅ `npm run lint` and `npm run build` pass
-- ✅ Code formatted with `npm run prettier`
-- ✅ `npm run prettier-check` passes
+- ✅ All automated CI checks pass:
+  - Code formatting (`prettier-check`)
+  - All linters (`lint:all` - ESLint, HTML, Markdown, CSS, YAML)
+  - Production build (`build`)
 - ✅ No merge conflicts
+
+> 💡 **CI/CD:** GitHub Actions automatically validates formatting, linting, and builds on every push/PR to `master`. Check the **Actions** tab for detailed results.
 
 **Questions?** Open an issue. Thanks for contributing! 🎉
 
