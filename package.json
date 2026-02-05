@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prettier": "prettier --write \"./src/**/*\" \"*.{html,json,js,md}\"",
-    "prettier-check": "prettier --check \"./src/**/*\" \"*.{html,json,js,md}\"",
+    "prettier": "prettier --write \"./src/**/*.{ts,tsx,css,json}\" \"*.{html,json,js,ts,md}\" \".github/**/*.{yml,yaml}\"",
+    "prettier-check": "prettier --check \"./src/**/*.{ts,tsx,css,json}\" \"*.{html,json,js,ts,md}\" \".github/**/*.{yml,yaml}\"",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "lint:html": "html-validate \"*.html\"",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:html": "html-validate \"*.html\" --max-warnings 0",
     "lint:md": "markdownlint \"*.md\"",
-    "lint:css": "stylelint \"**/*.css\"",
-    "lint:all": "npm run lint && npm run lint:html && npm run lint:md && npm run lint:css"
+    "lint:css": "stylelint \"**/*.css\" --max-warnings 0",
+    "lint:yaml": "yamllint .github/**/*.{yml,yaml}",
+    "lint:all": "npm run lint && npm run lint:html && npm run lint:md && npm run lint:css && npm run lint:yaml"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -41,6 +42,7 @@
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "yaml-lint": "^1.7.0"
   }
 }
