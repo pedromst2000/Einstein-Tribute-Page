@@ -242,9 +242,7 @@ Follow these **conventions** for branches and commit messages to keep the projec
 2. **Clone** your fork and create a branch: `git checkout -b <type>/<description>`
 3. Make changes and commit: `git commit -m "<type>: <description>"`
 4. Push to your branch: `git push origin <type>/<description>`
-5. Open a **Pull Request** on GitHub
-   - **Into**: `pedromst2000/Einstein-Tribute-Page` → `master` branch (the original repository)
-   - **From**: `your-username/Einstein-Tribute-Page` → `<type>/<description>` branch (your fork)
+5. Open a **Pull Request**
 
 **PR Requirements:**
 
