@@ -8,7 +8,11 @@
     "prettier": "prettier --write \"./src/**/*\" \"*.{html,json,js,md}\"",
     "prettier-check": "prettier --check \"./src/**/*\" \"*.{html,json,js,md}\"",
     "build": "tsc -b && vite build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:html": "html-validate \"*.html\"",
+    "lint:md": "markdownlint \"*.md\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:all": "npm run lint && npm run lint:html && npm run lint:md && npm run lint:css"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -28,8 +32,12 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "html-validate": "^10.7.0",
+    "markdownlint-cli": "^0.47.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "stylelint": "^17.1.1",
+    "stylelint-config-standard": "^40.0.0",
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
