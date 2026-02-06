@@ -60,7 +60,7 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 
 <div align="center">
   <p>
-    <strong>Click the image below to explore the full interactive gallery on Behance</strong> 🎨
+    <strong>Click the image below to explore the full interactive galle:ry on Behance</strong> 🎨
   </p>
   
   <!-- Scrollable Gallery Container -->
