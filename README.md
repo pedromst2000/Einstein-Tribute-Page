@@ -60,11 +60,11 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 
 <div align="center">
   <p>
-    <strong>Click the image below to explore the full interactive galle:ry on Behance</strong> 🎨
+    <strong>Click the image below to explore the full interactive gallery on Behance</strong> 🎨
   </p>
   
   <!-- Scrollable Gallery Container -->
-  <div style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; max-width: 100%; padding: 16px 0; background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%); border-radius: 12px;">
+  <div style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; max-width: 100%; padding: 8px 0; background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%); border-radius: 15px;">
     <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank" title="View full gallery on Behance">
       <img
         src="./images/ui/Tribute-Page.png"
