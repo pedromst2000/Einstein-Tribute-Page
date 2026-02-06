@@ -2,6 +2,7 @@
     [] - Add Testing Instructions (add to commands section)
     [] - Add live demo link
     [] - Add CD pipeline
+    [] - Add SEO meta tags (title, description, keywords) in HTML
 -->
   <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
@@ -57,9 +58,33 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 
 ## :sparkles: UI Preview
 
-Coming Soon...
-
-(Will be updated with images of mockups and video demo)
+<div align="center">
+  <p>
+    <strong>Click the image below to explore the full interactive gallery on Behance</strong> 🎨
+  </p>
+  
+  <!-- Scrollable Gallery Container -->
+  <div style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; max-width: 100%; padding: 16px 0; background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%); border-radius: 12px;">
+    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank" title="View full gallery on Behance">
+      <img
+        src="./images/ui/Tribute-Page.png"
+        alt="Einstein Tribute Page - Full Screenshot"
+        style="max-width: 95%; height: auto; display: inline-block; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.2s ease;"
+      />
+    </a>
+  </div>
+  
+  <!-- Behance Gallery Link -->
+  <p style="margin-top: 20px;">
+    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank">
+      <img src="https://img.shields.io/badge/View_Full_Gallery-Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="View on Behance" />
+    </a>
+  </p>
+  
+  <p style="font-size: 0.9em; color: #666; margin-top: 8px;">
+    <em>💡 Full-resolution images with zoom & pan available on Behance</em>
+  </p>
+</div>
 
 <br>
 
