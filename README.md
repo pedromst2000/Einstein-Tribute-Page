@@ -3,7 +3,6 @@
     [] - Add live demo link
     [] - Add CD pipeline
     [] - Add SEO meta tags (title, description, keywords) in HTML
-    [] - Add UI Preview screenshots in README
     [] - Add UI animations (scroll effects, hover states, etc.)
     [] - Add performance optimizations (lazy loading, code splitting)
     [] - Add analytics tracking (Google Analytics, etc.)
