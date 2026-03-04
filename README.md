@@ -66,18 +66,17 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 <div align="center">
   <p>
     <strong>Click the image below to view the full interactive gallery on Behance</strong> 🎨<br>
-    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank">
-      <img src="./images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot" width="400" height="200" />
+    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank" rel="noopener noreferrer">
+      <img src="./images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot"  style="max-width: 800px; width: 100%;" />
     </a>
   </p>
   <p>
-    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank">
+    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank" rel="noopener noreferrer">
       <img src="https://img.shields.io/badge/View_Full_Gallery-Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="View on Behance" />
     </a>
   </p>
   <p><em>💡 Full-resolution images with zoom & pan available on Behance</em></p>
 </div>
-
 
 ## :computer: Tech Stack
 
