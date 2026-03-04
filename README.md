@@ -3,6 +3,11 @@
     [] - Add live demo link
     [] - Add CD pipeline
     [] - Add SEO meta tags (title, description, keywords) in HTML
+    [] - Add UI Preview screenshots in README
+    [] - Add UI animations (scroll effects, hover states, etc.)
+    [] - Add performance optimizations (lazy loading, code splitting)
+    [] - Add analytics tracking (Google Analytics, etc.)
+    [] - Clean code and with SOLID principles
 -->
   <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
@@ -59,10 +64,12 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 ## :sparkles: UI Preview
 
 <div align="center">
-  <p><strong>Click the image below to view the full interactive gallery on Behance</strong> 🎨</p>
-  <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank">
-    <img src="./images/ui/Tribute-Page.png" alt="Einstein Tribute Page Screenshot" style="max-width: 800px; width: 100%; margin: 16px auto; display: block;" />
-  </a>
+  <p>
+    <strong>Click the image below to view the full interactive gallery on Behance</strong> 🎨<br>
+    <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank">
+      <img src="./images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot" width="400" height="200" />
+    </a>
+  </p>
   <p>
     <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank">
       <img src="https://img.shields.io/badge/View_Full_Gallery-Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="View on Behance" />
@@ -71,7 +78,6 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
   <p><em>💡 Full-resolution images with zoom & pan available on Behance</em></p>
 </div>
 
-<br>
 
 ## :computer: Tech Stack
 
