@@ -6,7 +6,7 @@
     [] - Add UI animations (scroll effects, hover states, etc.)
     [] - Add performance optimizations (lazy loading, code splitting)
     [] - Add analytics tracking (Google Analytics, etc.)
-    [] - Clean code and with SOLID principles
+    [] - Clean up code following SOLID principles
 -->
   <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
@@ -66,7 +66,7 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
   <p>
     <strong>Click the image below to view the full interactive gallery on Behance</strong> 🎨<br>
     <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank" rel="noopener noreferrer">
-      <img src="./images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot"  style="max-width: 800px; width: 100%;" />
+      <img src="./images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot"  width="800" />
     </a>
   </p>
   <p>
