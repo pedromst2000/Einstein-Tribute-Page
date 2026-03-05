@@ -1,4 +1,4 @@
-<!-- ci: retrigger workflow
+<!--
     [] - Add Deployment Instructions (add to commands section)
     [] - Add Testing Instructions (add to commands section)
     [] - Add live demo link
@@ -9,6 +9,8 @@
     [] - Add analytics tracking (Google Analytics, etc.)
     [] - Add SEO meta tags (title, description, keywords) in HTML
     [] - Clean up code following SOLID principles
+  !-->
+
   <div align="center" id="top">
     <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
 
