@@ -1,4 +1,3 @@
-# Minor change to trigger CI
 <!-- [] - Add Deployment Instructions (add to commands section)
     [] - Add Testing Instructions (add to commands section)
     [] - Add live demo link
