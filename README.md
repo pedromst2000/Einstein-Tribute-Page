@@ -2,10 +2,11 @@
     [] - Add Testing Instructions (add to commands section)
     [] - Add live demo link
     [] - Add CD pipeline
-    [] - Add SEO meta tags (title, description, keywords) in HTML
     [] - Add UI animations (scroll effects, hover states, etc.)
+    [] - Add in Tech Stack the animations libraries used (e.g., Framer Motion, GSAP), testing frameworks (e.g., Jest, React Testing Library), and deployment platforms (e.g., Vercel, Netlify)
     [] - Add performance optimizations (lazy loading, code splitting)
     [] - Add analytics tracking (Google Analytics, etc.)
+    [] - Add SEO meta tags (title, description, keywords) in HTML
     [] - Clean up code following SOLID principles
 -->
   <div align="center" id="top">
