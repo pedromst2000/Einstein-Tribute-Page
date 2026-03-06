@@ -16,6 +16,7 @@
     "lint:all": "npm run lint && npm run lint:html && npm run lint:md && npm run lint:css && npm run lint:yaml"
   },
   "dependencies": {
+    "lucide-react": "^0.577.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.0"
@@ -34,7 +35,7 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "html-validate": "^10.7.0",
-    "markdownlint-cli": "^0.47.0",
+    "markdownlint-cli": "^0.48.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "stylelint": "^17.1.1",
