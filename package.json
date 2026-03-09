@@ -9,11 +9,15 @@
     "prettier-check": "prettier --check \"./src/**/*.{ts,tsx,css,json}\" \"*.{html,json,js,ts,md}\" \".github/**/*.{yml,yaml}\"",
     "build": "tsc -b && vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --fix",
     "lint:html": "html-validate \"*.html\" --max-warnings 0",
     "lint:md": "markdownlint \"*.md\"",
+    "lint:md:fix": "markdownlint --fix \"*.md\"",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "lint:yaml": "yamllint .github/**/*.{yml,yaml}",
-    "lint:all": "npm run lint && npm run lint:html && npm run lint:md && npm run lint:css && npm run lint:yaml"
+    "lint:all": "npm run lint && npm run lint:html && npm run lint:md && npm run lint:css && npm run lint:yaml",
+    "lint:fix:all": "npm run lint:fix && npm run lint:md:fix && npm run lint:css:fix && npm run prettier"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",
