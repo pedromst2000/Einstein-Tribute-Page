@@ -100,6 +100,10 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 
 - [ESLint 9](https://eslint.org/) - JavaScript/TypeScript linter
 - [Prettier](https://prettier.io/) - Code formatter
+- [Stylelint](https://stylelint.io/) - CSS linter
+- [HTML-Validate](https://html-validate.org/) - HTML linter
+- [markdownlint](https://github.com/DavidAnson/markdownlint) - Markdown linter
+- [yamllint](https://github.com/adrienverge/yamllint) - YAML linter
 - TypeScript strict mode - Type checking
 
 ### Development Tools
@@ -215,11 +219,15 @@ npm run dev
 | `npm run dev`            | Start local development    | Vite dev server with HMR at `http://localhost:5173`      |
 | `npm run build`          | Build for production       | TypeScript check + optimized build in `dist/`            |
 | `npm run lint`           | Lint JavaScript/TypeScript | ESLint validation for TS/JS files                        |
+| `npm run lint:fix`       | Auto-fix ESLint issues     | ESLint with `--fix` flag for auto-fixable issues         |
 | `npm run lint:html`      | Validate HTML              | Check HTML structure and syntax                          |
 | `npm run lint:md`        | Validate Markdown          | Check Markdown formatting and links                      |
+| `npm run lint:md:fix`    | Auto-fix Markdown issues   | markdownlint with `--fix` flag                           |
 | `npm run lint:css`       | Validate CSS               | Check CSS syntax and best practices                      |
+| `npm run lint:css:fix`   | Auto-fix CSS issues        | Stylelint with `--fix` flag                              |
 | `npm run lint:yaml`      | Validate YAML              | Check YAML syntax for GitHub Actions workflows           |
 | `npm run lint:all`       | Run all linters            | ESLint + HTML + Markdown + CSS + YAML validation         |
+| `npm run lint:fix:all`   | Auto-fix all linters       | ESLint + Markdown + CSS fix + Prettier formatting        |
 | `npm run prettier`       | Format all files           | Auto-fix formatting (indentation, line endings)          |
 | `npm run prettier-check` | Verify formatting          | Check formatting without modifying files (used in CI/CD) |
 
