@@ -1,18 +1,18 @@
 <!--
-    [] - Add Deployment Instructions (add to commands section)
-    [] - Add Testing Instructions (add to commands section)
-    [] - Add live demo link
-    [] - Add CD pipeline
-    [x] - Add UI animations (scroll effects, hover states, etc.)
-    [x] - Add in Tech Stack the animations libraries used (e.g., Framer Motion, GSAP), testing frameworks (e.g., Jest, React Testing Library), and deployment platforms (e.g., Vercel, Netlify)
-    [] - Add performance optimizations (lazy loading, code splitting)
-    [] - Add analytics tracking (Google Analytics, etc.)
-    [] - Add SEO meta tags (title, description, keywords) in HTML
-    [] - Clean up code following SOLID principles
+  - Add Deployment Instructions (add to commands section)
+  - Add Testing Instructions (add to commands section)
+  - Add live demo link
+  - Add CD pipeline
+  - Add UI animations (scroll effects, hover states, etc.)
+  - Add in Tech Stack the testing frameworks (e.g., Jest, React Testing Library), and deployment platforms (e.g., Vercel, Netlify)
+  - Add performance optimizations (lazy loading, code splitting)
+  - Add analytics tracking (Google Analytics, etc.)
+  - Add SEO meta tags (title, description, keywords) in HTML
+  - Clean up code following SOLID principles
   !-->
 
   <div align="center" id="top">
-    <img src="./images/Einstein.png" width="350" height="160" alt="einstein-image">
+    <img src="./docs/images/Einstein.png" width="350" height="160" alt="einstein-image">
 
   <h1>Albert Einstein</h1>
   <p>
@@ -70,7 +70,7 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
   <p>
     <strong>Click the image below to view the full interactive gallery on Behance</strong> 🎨<br>
     <a href="https://www.behance.net/gallery/236041993/Einstein-Tribute-Landing-Page" target="_blank" rel="noopener noreferrer">
-      <img src="./images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot"  width="800" />
+      <img src="./docs/images/ui/UI-Screenshot.png" alt="Einstein Tribute Page Screenshot"  width="800" />
     </a>
   </p>
   <p>
