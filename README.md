@@ -3,8 +3,8 @@
     [] - Add Testing Instructions (add to commands section)
     [] - Add live demo link
     [] - Add CD pipeline
-    [] - Add UI animations (scroll effects, hover states, etc.)
-    [] - Add in Tech Stack the animations libraries used (e.g., Framer Motion, GSAP), testing frameworks (e.g., Jest, React Testing Library), and deployment platforms (e.g., Vercel, Netlify)
+    [x] - Add UI animations (scroll effects, hover states, etc.)
+    [x] - Add in Tech Stack the animations libraries used (e.g., Framer Motion, GSAP), testing frameworks (e.g., Jest, React Testing Library), and deployment platforms (e.g., Vercel, Netlify)
     [] - Add performance optimizations (lazy loading, code splitting)
     [] - Add analytics tracking (Google Analytics, etc.)
     [] - Add SEO meta tags (title, description, keywords) in HTML
@@ -45,19 +45,20 @@
 
 ## :bulb: About
 
-A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, one of the greatest minds in human history. This project showcases his life story, achievements, and legacy through an elegant and interactive user interface.
+A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, one of the greatest minds in human history. This project showcases his life story, achievements, and legacy through an elegant and interactive user interface with stunning animated interactions.
 
 **What you'll discover:**
 
 - 🎓 **Comprehensive Biography** - Explore Einstein's journey from his early years to becoming a revolutionary physicist
-- 📅 **Interactive Timeline** - Navigate through key milestones, discoveries, and achievements in Einstein's life
+- 📅 **Interactive Timeline** - Navigate through key milestones, discoveries, and achievements in Einstein's life with smooth scroll animations
 - 💡 **Legacy & Impact** - Learn about his contributions to physics, philosophy, and humanity
-- 🎨 **Elegant Design** - Experience a visually engaging tribute with modern aesthetics and smooth interactions
+- 🎨 **Elegant Design** - Experience a visually engaging tribute with modern aesthetics, animated interactions, and scroll-triggered effects
 
 **Key Features:**
 
 - 📱 Fully responsive design optimized for mobile, tablet, and desktop
 - ⚡ Fast, performant single-page application with client-side routing
+- ✨ Animated scroll effects and interaction animations powered by Framer Motion
 - ♿ Accessibility-focused UI for an inclusive user experience
 - 🎯 Three distinct sections: Hero with iconic quote, detailed Biography, and chronological Timeline
 
@@ -91,6 +92,7 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 ### Styling & UI
 
 - [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - React animation library for scroll effects and interactive animations
 
 ### Routing
 
@@ -124,17 +126,21 @@ Follow these **steps** to set up and `run` the project locally.
 
 **Choose one option for Node.js:**
 
+> ⚠️ **Node.js Version Requirement:** `^18.18.0 || ^20.9.0 || >=21.1.0` (minimum v18.18.0)
+> The project uses v24.13.0 as the recommended version (specified in `.nvmrc`)
+
 - **Option A (Recommended): nvm** - Installs Node.js automatically via `.nvmrc`
   - **Download** for Windows: [nvm-windows](https://www.nvmnode.com/guide/installation.html)
   - **Download** for macOS/Linux: [nvm-sh](https://www.nvmnode.com/guide/installation-sh.html)
-- **Option B: Node.js 24.13.0** - [Download](https://nodejs.org/) (manual install)
+- **Option B: Node.js 24.13.0** - [Download](https://nodejs.org/) (manual install - recommended)
+- **Option C: Node.js 20.9.0+** or **18.18.0+** - [Download](https://nodejs.org/) (minimum compatible versions)
 
 **Also required:**
 
 - **npm** - Bundled with Node.js
 - **Git** - [Download](https://git-scm.com/)
 
-> 💡 **nvm** reads `.nvmrc` to install/switch Node.js versions.
+> 💡 **nvm** reads `.nvmrc` to install/switch Node.js versions automatically.
 
 ---
 
@@ -172,27 +178,31 @@ cd Einstein-Tribute-Page
 
 select **"Open in Terminal"** / **"Git Bash Here"**.
 
-#### **Step 3: Set Node.js Version (if using nvm)**
+#### **Step 3: Set Node.js Version (Optional - nvm users only)**
 
-Check the `.nvmrc` file for the required Node.js version, and then run the following commands to install and use that version:
+> ⚠️ **Skip this step if you don't have nvm installed.** If you haven't installed nvm, just ensure Node.js 24.13.0 is installed globally and proceed to Step 4. If the `nvm` command is not recognized in your terminal, [install nvm-windows](https://www.nvmnode.com/guide/installation.html) first or skip directly to Step 4.
+
+**If you have nvm installed**, run these commands to install and use Node.js v24.13.0:
 
 ```bash
 nvm install v24.13.0
 ```
 
-- Windows
+Then use the version with the appropriate command for your OS:
+
+- **Windows:**
 
 ```bash
 nvm use $(type .nvmrc)
 ```
 
-- macOS/Linux
+- **macOS/Linux:**
 
 ```bash
 nvm use
 ```
 
-> 💡 **Tip:** If you don't have `nvm` installed, you can skip this step. Just ensure you have Node.js 24.13.0 installed globally ([verify](#mag-verification)).
+> 💡 **Verification:** After this step, verify with `node -v` — it should show `v24.13.0`.
 
 #### **Step 4: Install Dependencies**
 
