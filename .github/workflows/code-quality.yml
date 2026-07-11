@@ -1,0 +1,196 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Full history needed to compute changed files against the base branch
+          fetch-depth: 0
+
+      # Determine whether to run checks globally (push to master) or per-changed-files (PRs)
+      - name: Determine run mode
+        id: run_mode
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/master" ]; then
+            echo "run_globally=true" >> $GITHUB_OUTPUT
+            echo "Run mode: global (push to master)"
+          else
+            echo "run_globally=false" >> $GITHUB_OUTPUT
+            echo "Run mode: changed-files (PR or non-master push)"
+          fi
+
+      # Detect which files changed in this PR / push
+      - name: Get changed files
+        if: steps.run_mode.outputs.run_globally == 'false'
+        id: changed-files
+        uses: tj-actions/changed-files@v46
+        with:
+          files_yaml: |
+            ts_tsx:
+              - 'src/**/*.ts'
+              - 'src/**/*.tsx'
+            css:
+              - '**/*.css'
+            html:
+              - '*.html'
+            md:
+              - '*.md'
+            yaml:
+              - '**/*.yml'
+              - '**/*.yaml'
+            json:
+              - '**/*.json'
+            # Config files that should re-trigger all checks when changed
+            configs:
+              - 'eslint.config.js'
+              - 'tsconfig*.json'
+              - 'vite.config.ts'
+              - 'package.json'
+              - 'package-lock.json'
+
+      # Short debug log: show which groups changed (helps troubleshooting CI runs)
+      - name: Log changed-files summary
+        if: steps.run_mode.outputs.run_globally == 'false'
+        run: |
+          echo "changed: ts_tsx=${{ steps.changed-files.outputs.ts_tsx_any_changed }}"
+          echo "files:   ts_tsx=${{ steps.changed-files.outputs.ts_tsx_all_changed_files }}"
+          echo "changed: css=${{ steps.changed-files.outputs.css_any_changed }}"
+          echo "files:   css=${{ steps.changed-files.outputs.css_all_changed_files }}"
+          echo "changed: html=${{ steps.changed-files.outputs.html_any_changed }}"
+          echo "files:   html=${{ steps.changed-files.outputs.html_all_changed_files }}"
+          echo "changed: md=${{ steps.changed-files.outputs.md_any_changed }}"
+          echo "files:   md=${{ steps.changed-files.outputs.md_all_changed_files }}"
+          echo "changed: yaml=${{ steps.changed-files.outputs.yaml_any_changed }}"
+          echo "files:   yaml=${{ steps.changed-files.outputs.yaml_all_changed_files }}"
+          echo "changed: json=${{ steps.changed-files.outputs.json_any_changed }}"
+          echo "files:   json=${{ steps.changed-files.outputs.json_all_changed_files }}"
+          echo "changed: configs=${{ steps.changed-files.outputs.configs_any_changed }}"
+          echo "files:   configs=${{ steps.changed-files.outputs.configs_all_changed_files }}"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.13.0"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          echo "Installing project dependencies..."
+          if ! npm ci; then
+            echo "::error::Failed to install dependencies. Run 'npm install' locally and commit package-lock.json."
+            exit 1
+          fi
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # STAGE 1: CODE FORMATTING
+      # ═══════════════════════════════════════════════════════════════════════
+
+      - name: Check code formatting (Prettier)
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.ts_tsx_any_changed == 'true' ||
+          steps.changed-files.outputs.css_any_changed == 'true' ||
+          steps.changed-files.outputs.html_any_changed == 'true' ||
+          steps.changed-files.outputs.md_any_changed == 'true' ||
+          steps.changed-files.outputs.json_any_changed == 'true' ||
+          steps.changed-files.outputs.yaml_any_changed == 'true' ||
+          steps.changed-files.outputs.configs_any_changed == 'true'
+        run: |
+          echo "Checking code formatting on: src/**/*.{ts,tsx,css,json} *.{html,json,js,ts,md} .github/**/*.{yml,yaml}"
+          if ! npm run prettier-check; then
+            echo "::error::Formatting issues found. Run 'npm run prettier' locally and commit."
+            exit 1
+          fi
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # STAGE 2: LINTING (per file type — only runs when relevant files change)
+      # ═══════════════════════════════════════════════════════════════════════
+
+      - name: Lint TypeScript / TSX (ESLint)
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.ts_tsx_any_changed == 'true' ||
+          steps.changed-files.outputs.configs_any_changed == 'true'
+        run: |
+          echo "Running ESLint on: src/**/*.{ts,tsx}"
+          if ! npm run lint; then
+            echo "::error::ESLint issues found. Run 'npm run lint:fix' locally to auto-fix, then commit."
+            exit 1
+          fi
+
+      - name: Lint HTML
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.html_any_changed == 'true' ||
+          steps.changed-files.outputs.configs_any_changed == 'true'
+        run: |
+          echo "Running html-validate on: *.html"
+          if ! npm run lint:html; then
+            echo "::error::HTML validation issues found. Fix the HTML files manually and commit."
+            exit 1
+          fi
+
+      - name: Lint Markdown
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.md_any_changed == 'true'
+        run: |
+          echo "Running markdownlint on: *.md"
+          if ! npm run lint:md; then
+            echo "::error::Markdown issues found. Run 'npm run lint:md:fix' locally to auto-fix, then commit."
+            exit 1
+          fi
+
+      - name: Lint CSS (Stylelint)
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.css_any_changed == 'true' ||
+          steps.changed-files.outputs.configs_any_changed == 'true'
+        run: |
+          echo "Running Stylelint on: **/*.css"
+          if ! npm run lint:css; then
+            echo "::error::CSS issues found. Run 'npm run lint:css:fix' locally to auto-fix, then commit."
+            exit 1
+          fi
+
+      - name: Lint YAML
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.yaml_any_changed == 'true'
+        run: |
+          echo "Running yaml-lint on: .github/**/*.{yml,yaml}"
+          if ! npm run lint:yaml; then
+            echo "::error::YAML issues found. Fix the YAML files manually and commit."
+            exit 1
+          fi
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # STAGE 3: BUILD — TypeScript type-check + Vite bundle
+      # `tsc -b` here acts as the full import/type validation gate:
+      # catches broken imports, missing modules, and type errors across
+      # the entire project graph.
+      # ═══════════════════════════════════════════════════════════════════════
+
+      - name: Build project (tsc + Vite)
+        if: >-
+          steps.run_mode.outputs.run_globally == 'true' ||
+          steps.changed-files.outputs.ts_tsx_any_changed == 'true' ||
+          steps.changed-files.outputs.json_any_changed == 'true' ||
+          steps.changed-files.outputs.configs_any_changed == 'true'
+        run: |
+          echo "Running TypeScript type-check + Vite build on: src/ (full project)"
+          if ! npm run build; then
+            echo "::error::Build failed. Fix TypeScript errors or broken imports locally ('npm run build') and commit."
+            exit 1
+          fi
