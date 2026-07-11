@@ -2,63 +2,80 @@
   "events": [
     {
       "id": 1,
-      "year": "1879",
-      "description": "Albert Einstein born on March 14 in Ulm, in the Kingdom of Württemberg in the German Empire."
+      "image": "/assets/images/timeline/1879.webp",
+      "year": 1879,
+      "title": "Born in Ulm, Germany",
+      "description": "A child is born who will one day reshape our understanding of the universe."
     },
     {
       "id": 2,
-      "year": "1889",
-      "description": "Einstein's family moves to Munich, Germany."
+      "image": "/assets/images/timeline/1896.webp",
+      "year": 1896,
+      "title": "Swiss Polytechnic",
+      "description": "He enrols at the Zürich Polytechnic, renouncing German citizenship and pursuing physics and mathematics."
     },
     {
       "id": 3,
-      "year": "1896-1900",
-      "description": "Attends the Swiss Federal Institute of Technology in Zurich, Switzerland."
+      "image": "/assets/images/timeline/1902.webp",
+      "year": 1902,
+      "title": "Quiet Beginnings",
+      "description": "Working in Bern’s Patent Office, Einstein develops ideas that challenge classical physics."
     },
     {
       "id": 4,
-      "year": "1901",
-      "description": "Graduates from the Swiss Federal Institute of Technology with a degree in physics."
+      "image": "/assets/images/timeline/1905.webp",
+      "year": 1905,
+      "title": "The Miracle Year",
+      "description": "In a single year, he publishes four papers introducing special relativity and E = mc²."
     },
     {
       "id": 5,
-      "year": "1905",
-      "description": "Published the theory of relativity."
+      "image": "/assets/images/timeline/1915.webp",
+      "year": 1915,
+      "title": "General Relativity",
+      "description": "Einstein presents the General Theory of Relativity, redefining gravity as curved spacetime."
     },
     {
       "id": 6,
-      "year": "1915",
-      "description": "Publishes his general theory of relativity, which explains gravity as a curvature of spacetime."
+      "image": "/assets/images/timeline/1919.webp",
+      "year": 1919,
+      "title": "Light Bends, Fame Rises",
+      "description": "A solar eclipse confirms his theory, and his name echoes across the globe."
     },
     {
       "id": 7,
-      "year": "1916",
-      "description": "Completes the mathematics of general relativity."
+      "image": "/assets/images/timeline/1921.webp",
+      "year": 1921,
+      "title": "Nobel Prize",
+      "description": "Honoured for the photoelectric effect, his brilliance receives global acclaim."
     },
     {
       "id": 8,
-      "year": "1921",
-      "description": "Awarded the Nobel Prize in Physics for his explanation of the photoelectric effect."
+      "image": "/assets/images/timeline/1933.webp",
+      "year": 1933,
+      "title": "New Life in America",
+      "description": "Fleeing Nazi Germany, Einstein settles in Princeton and continues his research in exile."
     },
     {
       "id": 9,
-      "year": "1933",
-      "description": "Emigrates to the United States due to the rise of Nazi Germany and settles in Princeton, New Jersey, where he joins the Institute for Advanced Study."
+      "image": "/assets/images/timeline/1939.webp",
+      "year": 1939,
+      "title": "Letter to Roosevelt",
+      "description": "He warns the U.S. government about atomic research, influencing early nuclear development."
     },
     {
       "id": 10,
-      "year": "1940",
-      "description": "Becomes a U.S. citizen."
+      "image": "/assets/images/timeline/1940.webp",
+      "year": 1940,
+      "title": "A New Citizenship",
+      "description": "Einstein becomes an American citizen, beginning a new chapter far from home."
     },
     {
       "id": 11,
-      "year": "1952",
-      "description": "Declines the Israeli presidency offer."
-    },
-    {
-      "id": 12,
-      "year": "1955",
-      "description": "Dies of heart failure on April 18 in Princeton, New Jersey, at the age of 76."
+      "image": "/assets/images/timeline/1955.webp",
+      "year": 1955,
+      "title": "Final Chapter",
+      "description": "He dies in Princeton, leaving behind a legacy that reshaped physics and human thought."
     }
   ]
 }
