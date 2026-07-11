@@ -302,11 +302,11 @@ Every push and pull request to `master` is automatically validated by [GitHub Ac
 
 **Validation Stages:**
 
-| Stage | Tools | What's Checked |
-| ------- | ------- | --- |
-| **Formatting** | [Prettier](https://prettier.io/) | Code style across TS/TSX, CSS, JSON, HTML, Markdown, YAML |
-| **Linting** | [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), [HTML-Validate](https://html-validate.org/), [markdownlint](https://github.com/DavidAnson/markdownlint), [yaml-lint](https://github.com/adrienverge/yamllint) | Code quality per file type |
-| **Type Safety & Build** | [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) | Full static type-checking and production build verification |
+| Stage                   | Tools                                                                                                                                                                                                                            | What's Checked                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Formatting**          | [Prettier](https://prettier.io/)                                                                                                                                                                                                 | Code style across TS/TSX, CSS, JSON, HTML, Markdown, YAML   |
+| **Linting**             | [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), [HTML-Validate](https://html-validate.org/), [markdownlint](https://github.com/DavidAnson/markdownlint), [yaml-lint](https://github.com/adrienverge/yamllint) | Code quality per file type                                  |
+| **Type Safety & Build** | [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/)                                                                                                                                                      | Full static type-checking and production build verification |
 
 > 💡 **Quick Reference:** See [Available Commands](#arrow_forward-available-commands) for how to run and fix each check locally.
 
