@@ -39,6 +39,9 @@
   - [:inbox_tray: Installation Steps](#inbox_tray-installation-steps)
   - [:arrow_forward: Available Commands](#arrow_forward-available-commands)
 - [:handshake: Contributing](#handshake-contributing)
+  - [Naming Conventions](#naming-conventions)
+  - [Contribution Workflow](#contribution-workflow)
+  - [CI Pipeline](#ci-pipeline)
 - [:page_facing_up: License](#page_facing_up-license)
 
  <br>
@@ -78,7 +81,6 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
       <img src="https://img.shields.io/badge/View_Full_Gallery-Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="View on Behance" />
     </a>
   </p>
-  <p><em>💡 Full-resolution images with zoom & pan available on Behance</em></p>
 </div>
 
 ## :computer: Tech Stack
@@ -286,13 +288,27 @@ Follow these **conventions** for branches and commit messages to keep the projec
 - ✅ Title follows [naming convention](#naming-conventions)
 - ✅ Description explains changes
 - ✅ Screenshots for UI changes
-- ✅ All automated CI checks pass:
-  - Code formatting (`prettier-check`)
-  - All linters (`lint:all` - ESLint, HTML, Markdown, CSS, YAML)
-  - Production build (`build`)
+- ✅ All automated CI checks pass (see [CI Pipeline](#ci-pipeline) below)
 - ✅ No merge conflicts
 
-> 💡 **CI/CD:** GitHub Actions automatically validates formatting, linting, and builds on every push/PR to `master`. Check the **Actions** tab for detailed results.
+### CI Pipeline
+
+Every push and pull request to `master` is automatically validated by [GitHub Actions](https://github.com/pedromst2000/Einstein-Tribute-Page/actions) with intelligent selective runs:
+
+**Execution Modes:**
+
+- **Push to `master`:** All checks run globally (full project scan)
+- **Pull Requests & other pushes:** Only checks relevant to changed files run (faster feedback)
+
+**Validation Stages:**
+
+| Stage | Tools | What's Checked |
+| ------- | ------- | --- |
+| **Formatting** | [Prettier](https://prettier.io/) | Code style across TS/TSX, CSS, JSON, HTML, Markdown, YAML |
+| **Linting** | [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), [HTML-Validate](https://html-validate.org/), [markdownlint](https://github.com/DavidAnson/markdownlint), [yaml-lint](https://github.com/adrienverge/yamllint) | Code quality per file type |
+| **Type Safety & Build** | [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) | Full static type-checking and production build verification |
+
+> 💡 **Quick Reference:** See [Available Commands](#arrow_forward-available-commands) for how to run and fix each check locally.
 
 Thanks for contributing! 🎉
 
