@@ -1,10 +1,29 @@
 @import "tailwindcss";
 
-/* Custom Colors */
+/* Custom Colors - Following Tailwind naming conventions */
 @theme {
-  --color-primary: #fff;
-  --color-secondary: #151414;
-  --bg-img: #251b11;
+  /* Base Colors */
+  --color-white: #fff;
+
+  /* Universe Radial Gradient */
+  --color-indigo-900: #151f45;
+  --color-slate-950: #02030f;
+
+  /* Violet Color Family */
+  --color-violet-600: #bb5cf6; /* Light Violet Blue */
+  --color-violet-400: #c997f9; /* Queen Lilac */
+
+  /* Blue Color Family */
+  --color-blue-500: #3b82f6; /* Alexandra */
+  --color-blue-400: #60a5fa; /* Adonis */
+
+  /* Amber Color Family */
+  --color-amber-500: #f59e0b; /* Strong Amber */
+  --color-amber-400: #faba4f; /* Pastel Saffron */
+  --color-amber-300: #ffd583; /* Swiss Cheese */
+
+  /* Neutral Color Family */
+  --color-slate-300: #bbbbcb; /* Chatelle */
 
   /* Custom Fonts */
   --font-piazzolla-black: "Piazzolla-Black";
@@ -72,4 +91,16 @@
   src: url("/assets/fonts/SmoochSans-SemiBold.ttf") format("truetype");
 
   /* font-weight: 600; */
+}
+
+/* Universe Radial Background - Global fixed gradient with vertical stretch */
+@layer utilities {
+  .universe-radial {
+    background: radial-gradient(
+      ellipse 50% 70% at center,
+      var(--color-indigo-900) 0%,
+      var(--color-slate-950) 100%
+    );
+    min-height: 100vh;
+  }
 }
