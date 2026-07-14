@@ -26,71 +26,86 @@
   --color-slate-300: #bbbbcb; /* Chatelle */
 
   /* Custom Fonts */
-  --font-piazzolla-black: "Piazzolla-Black";
-  --font-piazzolla-bold: "Piazzolla-Bold";
-  --font-piazzolla-medium: "Piazzolla-Medium";
-  --font-piazzolla-regular: "Piazzolla-Regular";
-  --font-smoochSans-bold: "SmoochSans-Bold";
-  --font-smoochSans-medium: "SmoochSans-Medium";
-  --font-smoochSans-regular: "SmoochSans-Regular";
-  --font-smoochSans-semi-bold: "SmoochSans-SemiBold";
+  --font-clash-display-bold: "ClashDisplay-Bold";
+  --font-clash-display-semibold: "ClashDisplay-Semibold";
+  --font-cormorant-garamond-italic: "CormorantGaramond-Italic";
+  --font-cormorant-garamond-light-italic: "CormorantGaramond-LightItalic";
+  --font-cormorant-garamond-medium-italic: "CormorantGaramond-MediumItalic";
+  --font-manrope-light: "Manrope-Light";
+  --font-manrope-medium: "Manrope-Medium";
+  --font-manrope-regular: "Manrope-Regular";
+  --font-manrope-semibold: "Manrope-SemiBold";
+  --font-neue-montreal-bold: "NeueMontreal-Bold";
+  --font-neue-montreal-bold-italic: "NeueMontreal-BoldItalic";
+  --font-neue-montreal-medium: "NeueMontreal-Medium";
+  --font-neue-montreal-medium-italic: "NeueMontreal-MediumItalic";
 }
 
 /* Font Face Declarations */
 @font-face {
-  font-family: Piazzolla-Black;
-  src: url("/assets/fonts/Piazzolla-Black.ttf") format("truetype");
-
-  /* font-weight: 900; */
+  font-family: ClashDisplay-Bold;
+  src: url("/assets/fonts/ClashDisplay-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Piazzolla-Bold;
-  src: url("/assets/fonts/Piazzolla-Bold.ttf") format("truetype");
-
-  /* font-weight: 700; */
+  font-family: ClashDisplay-Semibold;
+  src: url("/assets/fonts/ClashDisplay-Semibold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Piazzolla-Medium;
-  src: url("/assets/fonts/Piazzolla-Medium.ttf") format("truetype");
-
-  /* font-weight: 500; */
+  font-family: CormorantGaramond-Italic;
+  src: url("/assets/fonts/CormorantGaramond-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: Piazzolla-Regular;
-  src: url("/assets/fonts/Piazzolla-Regular.ttf") format("truetype");
-
-  /* font-weight: 400; */
+  font-family: CormorantGaramond-LightItalic;
+  src: url("/assets/fonts/CormorantGaramond-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: SmoochSans-Bold;
-  src: url("/assets/fonts/SmoochSans-Bold.ttf") format("truetype");
-
-  /* font-weight: 700; */
+  font-family: CormorantGaramond-MediumItalic;
+  src: url("/assets/fonts/CormorantGaramond-MediumItalic.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: SmoochSans-Medium;
-  src: url("/assets/fonts/SmoochSans-Medium.ttf") format("truetype");
-
-  /* font-weight: 500; */
+  font-family: Manrope-Light;
+  src: url("/assets/fonts/Manrope-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: SmoochSans-Regular;
-  src: url("/assets/fonts/SmoochSans-Regular.ttf") format("truetype");
-
-  /* font-weight: 400; */
+  font-family: Manrope-Medium;
+  src: url("/assets/fonts/Manrope-Medium.otf") format("opentype");
 }
 
 @font-face {
-  font-family: SmoochSans-SemiBold;
-  src: url("/assets/fonts/SmoochSans-SemiBold.ttf") format("truetype");
+  font-family: Manrope-Regular;
+  src: url("/assets/fonts/Manrope-Regular.otf") format("opentype");
+}
 
-  /* font-weight: 600; */
+@font-face {
+  font-family: Manrope-SemiBold;
+  src: url("/assets/fonts/Manrope-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueMontreal-Bold;
+  src: url("/assets/fonts/NeueMontreal-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueMontreal-BoldItalic;
+  src: url("/assets/fonts/NeueMontreal-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueMontreal-Medium;
+  src: url("/assets/fonts/NeueMontreal-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueMontreal-MediumItalic;
+  src: url("/assets/fonts/NeueMontreal-MediumItalic.otf") format("opentype");
 }
 
 /* Universe Radial Background - Global fixed gradient with vertical stretch */
