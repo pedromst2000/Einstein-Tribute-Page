@@ -243,6 +243,8 @@ npm run dev
 | `npm run prettier`       | Format all files           | Auto-fix formatting (indentation, line endings)          |
 | `npm run prettier-check` | Verify formatting          | Check formatting without modifying files (used in CI/CD) |
 
+> 💡 **Quick Formatting Tip:** In VS Code, press **`Alt + Shift + F`** to auto-format the current file!
+
  <br>
 
 ## :handshake: Contributing
@@ -259,19 +261,19 @@ Your contributions help keep this tribute to Einstein alive and evolving! Whethe
 
 Follow these **conventions** for branches and commit messages to keep the project organized:
 
-| Type       | Use Case               | Branch Example          | Commit Example                      |
-| ---------- | ---------------------- | ----------------------- | ----------------------------------- |
-| `feat`     | New feature            | `feat/timeline-nav`     | `feat: add timeline navigation`     |
-| `fix`      | Bug fix                | `fix/mobile-overflow`   | `fix: resolve mobile menu overflow` |
-| `docs`     | Documentation          | `docs/update-readme`    | `docs: update installation steps`   |
-| `refactor` | Code restructure       | `refactor/hero-section` | `refactor: simplify hero logic`     |
-| `style`    | Formatting             | `style/format-imports`  | `style: organize imports`           |
-| `test`     | Tests                  | `test/timeline-tests`   | `test: add timeline tests`          |
-| `perf`     | Performance            | `perf/optimize-images`  | `perf: optimize image loading`      |
-| `build`    | Build system           | `build/update-vite`     | `build: upgrade to Vite 7`          |
-| `ci`       | CI/CD pipelines        | `ci/add-github-actions` | `ci: add lint workflow`             |
-| `chore`    | Maintenance            | `chore/update-deps`     | `chore: update dependencies`        |
-| `revert`   | Revert previous commit | `revert/feature-x`      | `revert: revert feat timeline-nav`  |
+| Type       | Use Case                                          | Branch Example            | Commit Example                            |
+| ---------- | ------------------------------------------------- | ------------------------- | ----------------------------------------- |
+| `feat`     | Add, adjust, or remove UI features                | `feat/scroll-animations`  | `feat: add scroll animation effects`      |
+| `fix`      | Fix UI bugs from previous `feat` commits          | `fix/timeline-overlap`    | `fix: resolve timeline overlap on mobile` |
+| `refactor` | Rewrite/restructure code without behavior changes | `refactor/hero-component` | `refactor: simplify hero component logic` |
+| `perf`     | Improve performance (special `refactor` type)     | `perf/optimize-fonts`     | `perf: optimize font loading`             |
+| `style`    | Code style changes (whitespace, formatting, etc.) | `style/format-imports`    | `style: organize imports and fix spacing` |
+| `test`     | Add missing or correct existing tests             | `test/hero-component`     | `test: add hero component tests`          |
+| `docs`     | Documentation updates (README, guides, etc.)      | `docs/add-deployment`     | `docs: add deployment instructions`       |
+| `build`    | Build system, bundler, dependencies, versions     | `build/upgrade-vite`      | `build: upgrade Vite to v7`               |
+| `ops`      | deployment, CI/CD                                 | `ops/add-github-actions`  | `ops: add GitHub Actions CI workflow`     |
+| `chore`    | Maintenance tasks, `.gitignore`, initial setup    | `chore/initial-setup`     | `chore: initial project setup`            |
+| `revert`   | Revert a previous commit                          | `revert/feat-animations`  | `revert: revert feat scroll-animations`   |
 
 ### Contribution Workflow
 
