@@ -1,16 +1,3 @@
-<!--
-  - Add Deployment Instructions (add to commands section)
-  - Add Testing Instructions (add to commands section)
-  - Add live demo link
-  - Add CD pipeline
-  - Add UI animations (scroll effects, hover states, etc.)
-  - Add in Tech Stack the testing frameworks (e.g., Jest, React Testing Library), and deployment platforms (e.g., Vercel, Netlify)
-  - Add performance optimizations (lazy loading, code splitting)
-  - Add analytics tracking (Google Analytics, etc.)
-  - Add SEO meta tags (title, description, keywords) in HTML
-  - Clean up code following SOLID principles
-  !-->
-
   <div align="center" id="top">
     <img src="./docs/images/Einstein.png" width="350" height="160" alt="einstein-image">
 
