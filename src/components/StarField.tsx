@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { generateStars } from "../../utils/starGenerator";
+import { generateStars } from "../utils/starGenerator";
 
 const StarField: React.FC = () => {
   const stars: ReturnType<typeof generateStars> = useMemo(
@@ -9,33 +9,6 @@ const StarField: React.FC = () => {
 
   return (
     <>
-      <style>{`
-        @keyframes twinkle {
-          0% {
-            opacity: 0.2;
-          }
-          15% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0.85;
-          }
-          75% {
-            opacity: 0.3;
-          }
-          100% {
-            opacity: 0.2;
-          }
-        }
-
-        .star {
-          position: absolute;
-          border-radius: 50%;
-          animation: twinkle var(--animation-duration) infinite;
-          pointer-events: none;
-        }
-      `}</style>
-
       <div className="fixed inset-0 w-full h-full overflow-hidden">
         {stars.map((star) => (
           <div

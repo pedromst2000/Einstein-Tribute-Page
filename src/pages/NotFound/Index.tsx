@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import StarField from "../../components/StarField/Index";
+import StarField from "../../components/StarField";
 
 const NotFound: React.FC = () => {
   return (
