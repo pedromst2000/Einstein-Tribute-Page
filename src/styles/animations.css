@@ -1,0 +1,44 @@
+/* Global Animations */
+
+/* Twinkle animation for stars */
+@keyframes twinkle {
+  0% {
+    opacity: 0.15;
+  }
+
+  8% {
+    opacity: 0.8;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  95% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.15;
+  }
+}
+
+/* Star styling with animation support */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  animation: twinkle var(--animation-duration) infinite;
+  pointer-events: none;
+}
