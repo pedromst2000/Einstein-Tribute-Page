@@ -148,12 +148,9 @@
     border-radius: 50%;
   }
 
-  /* Display Gradients - 5 stops at different angles */
-
-  /* Main variation: -94 degrees */
-  .display-gradient-main {
+  .display-gradient {
     background: linear-gradient(
-      94deg,
+      to right,
       var(--color-violet-600) 3%,
       var(--color-violet-400) 19%,
       var(--color-blue-500) 32%,
@@ -164,31 +161,201 @@
     color: transparent;
   }
 
-  /* Secondary variation: -95 degrees */
-  .display-gradient-secondary {
-    background: linear-gradient(
-      95deg,
-      var(--color-violet-600) 3%,
-      var(--color-violet-400) 19%,
-      var(--color-blue-500) 32%,
-      var(--color-blue-400) 53%,
-      var(--color-amber-500) 73%
-    );
-    background-clip: text;
-    color: transparent;
+  /* Display Gradient - Single responsive gradient for all variants */
+
+  /* Horizontal right-aligned gradient with proportional color stops */
+  @media (width >= 320px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 35%,
+        var(--color-violet-400) 40%,
+        var(--color-blue-500) 52%,
+        var(--color-blue-400) 62%,
+        var(--color-amber-500) 82%
+      );
+      background-clip: text;
+      color: transparent;
+    }
   }
 
-  /* Tertiary variation: -132 degrees */
-  .display-gradient-tertiary {
-    background: linear-gradient(
-      132deg,
-      var(--color-violet-600) 3%,
-      var(--color-violet-400) 19%,
-      var(--color-blue-500) 32%,
-      var(--color-blue-400) 53%,
-      var(--color-amber-500) 73%
-    );
-    background-clip: text;
-    color: transparent;
+  @media (width >= 375px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 35%,
+        var(--color-violet-400) 40%,
+        var(--color-blue-500) 52%,
+        var(--color-blue-400) 62%,
+        var(--color-amber-500) 82%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 425px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 35%,
+        var(--color-violet-400) 40%,
+        var(--color-blue-500) 52%,
+        var(--color-blue-400) 62%,
+        var(--color-amber-500) 82%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 600px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 34%,
+        var(--color-violet-400) 39%,
+        var(--color-blue-500) 52%,
+        var(--color-blue-400) 62%,
+        var(--color-amber-500) 83%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 768px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 32%,
+        var(--color-violet-400) 37%,
+        var(--color-blue-500) 51%,
+        var(--color-blue-400) 63%,
+        var(--color-amber-500) 85%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 820px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 32%,
+        var(--color-violet-400) 37%,
+        var(--color-blue-500) 51%,
+        var(--color-blue-400) 63%,
+        var(--color-amber-500) 85%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 1024px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 31%,
+        var(--color-violet-400) 36%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 64%,
+        var(--color-amber-500) 86%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 1280px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 29%,
+        var(--color-violet-400) 35%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 65%,
+        var(--color-amber-500) 88%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 1440px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 28%,
+        var(--color-violet-400) 34%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 66%,
+        var(--color-amber-500) 89%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 1920px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 25%,
+        var(--color-violet-400) 32%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 68%,
+        var(--color-amber-500) 92%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 2560px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 21%,
+        var(--color-violet-400) 30%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 70%,
+        var(--color-amber-500) 96%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 3200px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 17%,
+        var(--color-violet-400) 28%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 73%,
+        var(--color-amber-500) 100%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  @media (width >= 3840px) {
+    .display-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 13%,
+        var(--color-violet-400) 25%,
+        var(--color-blue-500) 50%,
+        var(--color-blue-400) 75%,
+        var(--color-amber-500) 100%
+      );
+      background-clip: text;
+      color: transparent;
+    }
   }
 }

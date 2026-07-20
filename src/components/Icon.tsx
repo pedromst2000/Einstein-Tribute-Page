@@ -1,10 +1,14 @@
 import React from "react";
-import type { IconProps } from "../../types";
+import type { IconProps } from "../types";
 
 const Icon: React.FC<IconProps> = (props) => {
   // If type is 'lucide', render a Lucide icon with Lucide-specific props
   if (props.type === "lucide") {
-    const IconComponent = props.icon;
+    const IconComponent: React.ElementType<{
+      size?: string | number;
+      color?: string;
+      strokeWidth?: number;
+    }> = props.icon;
     return (
       <IconComponent
         size={props.size}
