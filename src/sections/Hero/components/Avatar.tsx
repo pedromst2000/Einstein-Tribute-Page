@@ -29,7 +29,7 @@ const Avatar: React.FC = () => {
 
       {/* Avatar Container with Gradient Border */}
       <motion.div
-        className="avatar-border-gradient relative xs:w-[145px] xs:h-[145px] sm:w-[145px] sm:h-[145px] md-sm:w-[160px] md-sm:h-[160px] sm-lg:w-[176px] sm-lg:h-[176px] sm-md:w-[192px] sm-md:h-[192px] md-lg:w-[196px] md-lg:h-[196px] lg:w-[210px] lg:h-[210px] xl:w-[226px] xl:h-[226px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[250px] 3xl:h-[250px] 4xl:w-[360px] 4xl:h-[360px] 4xl-5xl:w-[420px] 4xl-5xl:h-[420px] 5xl:w-[500px] 5xl:h-[500px] rounded-full p-[3px] xs:p-[3px] sm:p-[3px] md-sm:p-[3px] sm-lg:p-[3px] sm-md:p-[3.5px] md-lg:p-[3.5px] lg:p-[4px] xl:p-[4px] 2xl:p-[5px] 3xl:p-[5px] 4xl:p-[6px] 4xl-5xl:p-[7px] 5xl:p-[9px]"
+        className="avatar-border-gradient relative 2xs:w-[127px] 2xs:h-[127px] xs:w-[145px] xs:h-[145px] sm:w-[145px] sm:h-[145px] md-sm:w-[160px] md-sm:h-[160px] sm-lg:w-[176px] sm-lg:h-[176px] sm-md:w-[192px] sm-md:h-[192px] md-lg:w-[196px] md-lg:h-[196px] lg:w-[210px] lg:h-[210px] xl:w-[226px] xl:h-[226px] 2xl:w-[250px] 2xl:h-[250px] 3xl:w-[250px] 3xl:h-[250px] 4xl:w-[360px] 4xl:h-[360px] 4xl-5xl:w-[420px] 4xl-5xl:h-[420px] 5xl:w-[500px] 5xl:h-[500px] rounded-full p-[3px] 2xs:p-[2.5px] xs:p-[3px] sm:p-[3px] md-sm:p-[3px] sm-lg:p-[3px] sm-md:p-[3.5px] md-lg:p-[3.5px] lg:p-[4px] xl:p-[4px] 2xl:p-[5px] 3xl:p-[5px] 4xl:p-[6px] 4xl-5xl:p-[7px] 5xl:p-[9px]"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.8, ease: "easeInOut" }}
@@ -38,11 +38,11 @@ const Avatar: React.FC = () => {
           className="relative w-full h-full rounded-full overflow-hidden"
           animate={{
             boxShadow: [
-              "0 -8px 16px 8px rgba(139,92,246,0.25), 0 6px 10px 6px rgba(245,158,11,0.15), -6px 0 12px 8px rgba(59,130,246,0.2)",
-              "0 -8px 16px 8px rgba(139,92,246,0.37), 0 6px 10px 6px rgba(245,158,11,0.25), -6px 0 12px 8px rgba(59,130,246,0.3)",
-              "0 -8px 16px 8px rgba(139,92,246,0.5), 0 6px 10px 6px rgba(245,158,11,0.35), -6px 0 12px 8px rgba(59,130,246,0.4)",
-              "0 -8px 16px 8px rgba(139,92,246,0.37), 0 6px 10px 6px rgba(245,158,11,0.25), -6px 0 12px 8px rgba(59,130,246,0.3)",
-              "0 -8px 16px 8px rgba(139,92,246,0.25), 0 6px 10px 6px rgba(245,158,11,0.15), -6px 0 12px 8px rgba(59,130,246,0.2)",
+              "0 -8px 17px 8px rgba(139,92,246,0.25), 0 6px 10px 6px rgba(245,158,11,0.15), -6px 0 12px 8px rgba(59,130,246,0.2)",
+              "0 -8px 17px 8px rgba(139,92,246,0.37), 0 6px 10px 6px rgba(245,158,11,0.25), -6px 0 12px 8px rgba(59,130,246,0.3)",
+              "0 -8px 17px 8px rgba(139,92,246,0.5), 0 6px 10px 6px rgba(245,158,11,0.35), -6px 0 12px 8px rgba(59,130,246,0.4)",
+              "0 -8px 17px 8px rgba(139,92,246,0.37), 0 6px 10px 6px rgba(245,158,11,0.25), -6px 0 12px 8px rgba(59,130,246,0.3)",
+              "0 -8px 17px 8px rgba(139,92,246,0.25), 0 6px 10px 6px rgba(245,158,11,0.15), -6px 0 12px 8px rgba(59,130,246,0.2)",
             ],
           }}
           transition={{

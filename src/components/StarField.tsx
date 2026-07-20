@@ -2,10 +2,13 @@ import React, { useMemo } from "react";
 import { generateStars } from "../utils/starGenerator";
 
 const StarField: React.FC = () => {
+  /**
+   * Generate stars using the generateStars function and memoize the result to prevent unnecessary re-renders. The useMemo hook ensures that the stars are only generated once when the component mounts, improving performance by avoiding regeneration on every render.
+   */
   const stars: ReturnType<typeof generateStars> = useMemo(
     () => generateStars(),
     [],
-  ); // useMemo to avoid regenerating stars on every render
+  );
 
   return (
     <>
@@ -22,7 +25,7 @@ const StarField: React.FC = () => {
                 height: `${star.size}px`,
                 backgroundColor: star.color,
                 animationDelay: star.animationDelay,
-                "--animation-duration": star.animationDuration,
+                //"--animation-duration": star.animationDuration,
               } as React.CSSProperties
             }
           />
