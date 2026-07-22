@@ -6,11 +6,8 @@ const Home: React.FC = () => {
   return (
     <div className="relative min-h-screen universe-radial overflow-x-hidden">
       <StarField />
-      <main className="relative z-10 w-full px-3 2xs:px-4 xs:px-4">
-        <section
-          aria-label="Hero"
-          className="flex flex-col items-center justify-center w-full"
-        >
+      <main className="relative z-10 px-3 2xs:px-4 xs:px-4">
+        <section aria-label="Hero">
           <Hero />
         </section>
       </main>

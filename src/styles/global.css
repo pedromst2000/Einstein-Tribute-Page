@@ -22,7 +22,7 @@
   --color-white: #fff;
 
   /* Universe Radial Gradient */
-  --color-indigo-900: #151f45;
+  --color-indigo-900: #0a0f2a;
   --color-slate-950: #02030f;
 
   /* Violet Color Family */
@@ -148,135 +148,59 @@
     border-radius: 50%;
   }
 
-  /* Display Gradient */
-
-  .display-gradient {
+  /* Display Gradient - Variant-specific gradient styles */
+  .display-main-gradient {
     background: linear-gradient(
       to right,
-      var(--color-violet-600) 3%,
-      var(--color-violet-400) 19%,
-      var(--color-blue-500) 32%,
-      var(--color-blue-400) 53%,
-      var(--color-amber-500) 73%
+      var(--color-violet-600) 15%,
+      var(--color-violet-400) 30%,
+      var(--color-blue-500) 45%,
+      var(--color-blue-400) 65%,
+      var(--color-amber-500) 95%
     );
     background-clip: text;
     color: transparent;
   }
+}
 
-  /* xs: 320px - Small phones */
-  @media (width >= 320px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 30%,
-        var(--color-blue-500) 45%,
-        var(--color-blue-400) 60%,
-        var(--color-amber-500) 75%
-      );
-      background-clip: text;
-      color: transparent;
-      background-size: 98% auto;
-    }
-  }
+.display-secondary-gradient {
+  background: linear-gradient(
+    to right,
+    var(--color-violet-600) 3%,
+    var(--color-violet-400) 15%,
+    var(--color-blue-500) 50%,
+    var(--color-blue-400) 65%,
+    var(--color-amber-500) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
 
-  /* sm: 375px - Modern iPhones and Android phones */
-  @media (width >= 375px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 30%,
-        var(--color-blue-500) 45%,
-        var(--color-blue-400) 55%,
-        var(--color-amber-500) 73%
-      );
-      background-clip: text;
-      color: transparent;
-    }
-  }
+.display-tertiary-gradient {
+  background: linear-gradient(
+    to right,
+    var(--color-violet-600) 15%,
+    var(--color-violet-400) 35%,
+    var(--color-blue-500) 45%,
+    var(--color-blue-400) 60%,
+    var(--color-amber-500) 75%
+  );
+  background-clip: text;
+  color: transparent;
+}
 
-  /* md-sm: 425px - Large phones */
-  @media (width >= 425px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 33%,
-        var(--color-blue-500) 45%,
-        var(--color-blue-400) 55%,
-        var(--color-amber-500) 73%
-      );
-      background-clip: text;
-      color: transparent;
-    }
-  }
-
-  /* sm-lg: 600px | sm-md: 768px | md-lg: 820px - Tablets (portrait) */
-  @media (width >= 600px), (width >= 768px), (width >= 820px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 33%,
-        var(--color-blue-500) 45%,
-        var(--color-blue-400) 55%,
-        var(--color-amber-500) 65%
-      );
-      background-clip: text;
-      color: transparent;
-    }
-  }
-
-  /* lg: 1024px - Tablets (landscape), small laptops */
-  @media (width >= 1024px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 39%,
-        var(--color-blue-500) 45%,
-        var(--color-blue-400) 50%,
-        var(--color-amber-500) 65%
-      );
-      background-clip: text;
-      color: transparent;
-    }
-  }
-
-  /* xl: 1280px - Standard desktop/laptop layouts */
-  @media (width >= 1280px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 40%,
-        var(--color-blue-500) 45%,
-        var(--color-blue-400) 50%,
-        var(--color-amber-500) 63%
-      );
-      background-clip: text;
-      color: transparent;
-    }
-  }
-
-  /* 2xl: 1440px | 3xl: 1920px | 4xl: 2560px | 4xl-5xl: 3200px | 5xl: 3840px - Large screens (laptops, monitors, 4K) */
-  @media (width >= 1440px),
-    (width >= 1920px),
-    (width >= 2560px),
-    (width >= 3200px),
-    (width >= 3840px) {
-    .display-gradient {
-      background: linear-gradient(
-        60deg,
-        var(--color-violet-600) 15%,
-        var(--color-violet-400) 43%,
-        var(--color-blue-500) 48%,
-        var(--color-blue-400) 50%,
-        var(--color-amber-500) 60%
-      );
-      background-clip: text;
-      color: transparent;
-    }
+/* Display Tertiary Gradient - Responsive adjustments for small screens : xs and sm */
+@media (width >= 320px), (width >= 425px) {
+  .display-tertiary-gradient {
+    background: linear-gradient(
+      to right,
+      var(--color-violet-600) 15%,
+      var(--color-violet-400) 35%,
+      var(--color-blue-500) 45%,
+      var(--color-blue-400) 60%,
+      var(--color-amber-500) 70%
+    );
+    background-clip: text;
+    color: transparent;
   }
 }
