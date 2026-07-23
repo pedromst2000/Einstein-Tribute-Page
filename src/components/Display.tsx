@@ -7,13 +7,13 @@ const Display: React.FC<DisplayProps> = ({ content, variant }) => {
   const gradientClass: string = `display-${variant}-gradient`;
 
   return (
-    <div className="w-full max-w-full overflow-hidden">
+    <>
       <h1
         className={`${gradientClass} ${responsiveClasses} font-clash-display-semibold text-center w-full block px-2 2xs:px-3 xs:px-4`}
       >
         {content}
       </h1>
-    </div>
+    </>
   );
 };
 

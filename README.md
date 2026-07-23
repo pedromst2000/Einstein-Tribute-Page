@@ -81,7 +81,8 @@ A modern, responsive **tribute landing page** dedicated to **Albert Einstein**, 
 ### Styling & UI
 
 - [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - React animation library for scroll effects and interactive animations
+- [GSAP 3](https://gsap.com/) - Professional animation library for complex scroll and interactive animations
+- [typewriter-effect](https://www.npmjs.com/package/typewriter-effect) - React component for elegant text reveal animations
 
 ### Routing
 

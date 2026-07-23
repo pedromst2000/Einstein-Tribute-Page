@@ -8,7 +8,7 @@ import {
   MILKY_WAY_DENSITY_MULTIPLIER,
   POLE_DENSITY_MULTIPLIER,
 } from "./constants";
-import type { Star } from "../types";
+import type { Star } from "../types/star";
 
 /**
  * Generates an array of stars distributed in constellation clusters

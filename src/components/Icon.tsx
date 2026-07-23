@@ -1,5 +1,5 @@
 import React from "react";
-import type { IconProps } from "../types";
+import type { IconProps } from "../types/icon";
 
 const Icon: React.FC<IconProps> = (props) => {
   // If type is 'lucide', render a Lucide icon with Lucide-specific props
