@@ -2,6 +2,7 @@ import React from "react";
 import { Sparkles } from "lucide-react";
 import Avatar from "./components/Avatar";
 import EinsteinIdentity from "./components/EinsteinIdentity";
+import ScrollIndicator from "./components/ScrollIndicator";
 import Quote from "../../components/Quote";
 import Icon from "../../components/Icon";
 
@@ -22,6 +23,7 @@ const Hero: React.FC = () => {
         content="Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."
         variant="main"
       />
+      <ScrollIndicator />
     </div>
   );
 };
