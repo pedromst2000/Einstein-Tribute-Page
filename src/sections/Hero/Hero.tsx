@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         size={20}
         color="#F59E0B"
         strokeWidth={2}
-        wrapperClassName="md-sm:scale-75 lg:scale-100"
+        responsiveClassName="xs:scale-75 sm:scale-75 md-sm:scale-75 sm-lg:scale-90 sm-md:scale-95 md-lg:scale-100 lg:scale-100 xl:scale-100 2xl:scale-100 3xl:scale-100 4xl:scale-120 4xl-5xl:scale-150 5xl:scale-170 transition-transform duration-200"
       />
       <Quote
         content="Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."

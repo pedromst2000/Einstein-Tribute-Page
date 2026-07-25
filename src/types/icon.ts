@@ -10,7 +10,7 @@ export type LucideIconProps = {
   size?: number;
   color?: string;
   strokeWidth?: number;
-  wrapperClassName?: string; // Tailwind classes for responsive sizing
+  responsiveClassName?: string; // Custom Tailwind responsive classes for this icon
 };
 
 /**
