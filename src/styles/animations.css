@@ -35,10 +35,29 @@
   }
 }
 
+/* Scroll indicator bounce animation */
+@keyframes bounce-scroll {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: translateY(8px);
+  }
+}
+
 /* Star styling with animation support */
 .star {
   position: absolute;
   border-radius: 50%;
   animation: twinkle var(--animation-duration) infinite;
   pointer-events: none;
+}
+
+/* Scroll indicator container animation */
+.scroll-indicator-container {
+  animation: bounce-scroll 2s ease-in-out infinite;
 }
