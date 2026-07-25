@@ -21,8 +21,8 @@ const renderLucideIcon = (props: LucideIconProps): React.ReactNode => {
   );
 
   // Wrap with responsive classes if provided
-  if (props.wrapperClassName) {
-    return <div className={props.wrapperClassName}>{icon}</div>;
+  if (props.responsiveClassName) {
+    return <div className={props.responsiveClassName}>{icon}</div>;
   }
 
   return icon;
