@@ -6,7 +6,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   whitePart,
   coloredPart,
   variant,
-  color,
+  colorItalic,
 }) => {
   const responsiveClasses: string = variantResponsiveStyles[variant];
 
@@ -20,7 +20,9 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         <span className="font-neue-montreal-bold">{whitePart}</span>
 
         {/* Colored/Italic Part */}
-        <span className={`${color} font-neue-montreal-bold-italic italic ml-2`}>
+        <span
+          className={`${colorItalic} font-neue-montreal-bold-italic italic ml-2`}
+        >
           {coloredPart}
         </span>
       </div>

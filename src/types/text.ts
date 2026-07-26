@@ -45,25 +45,25 @@ export const fontWeightClasses: Record<FontWeight, string> = {
  * @example cta: 16px/16px/4% (mobile) → 18px/16px/4% (2xl) → 24px/20px/4% (5xl)
  */
 export const variantStyles: Record<TextVariant, string> = {
-  // H5: 16px/22px/3% on mobile, 18px/26px/0% on desktop (lg), increases to 26px/32px on 5xl
-  h5: "text-[16px] leading-[22px] tracking-[3%] lg:text-[18px] lg:leading-[26px] lg:tracking-[0%] 4xl:text-[21px] 4xl:leading-[28px] 4xl-5xl:text-[23px] 4xl-5xl:leading-[30px] 5xl:text-[26px] 5xl:leading-[32px]",
+  // H5: 16px/22px/3% on mobile, 18px/26px/0% on desktop (lg), increases to 32px/38px on 5xl
+  h5: "text-[16px] leading-[22px] tracking-[3%] lg:text-[18px] lg:leading-[26px] lg:tracking-[0%] 4xl:text-[24px] 4xl:leading-[30px] 4xl-5xl:text-[27px] 4xl-5xl:leading-[34px] 5xl:text-[32px] 5xl:leading-[38px]",
 
-  // Body 1: 14px/22px/2% on mobile, 16px/26px/2% on desktop (lg), increases to 24px/32px on 5xl - default body text
+  // Body 1: 14px/22px/2% on mobile, 16px/26px/2% on desktop (lg), increases to 30px/36px on 5xl - default body text
   body1:
-    "text-[14px] leading-[22px] tracking-[2%] lg:text-[16px] lg:leading-[26px] 4xl:text-[19px] 4xl:leading-[28px] 4xl-5xl:text-[21px] 4xl-5xl:leading-[30px] 5xl:text-[24px] 5xl:leading-[32px]",
+    "text-[14px] leading-[22px] tracking-[2%] lg:text-[16px] lg:leading-[26px] 4xl:text-[22px] 4xl:leading-[30px] 4xl-5xl:text-[25px] 4xl-5xl:leading-[32px] 5xl:text-[30px] 5xl:leading-[36px]",
 
-  // Body 2: 13px/20px/2% on mobile, 14px/20px/2% on desktop (lg), increases to 22px/28px on 5xl
+  // Body 2: 13px/20px/2% on mobile, 14px/20px/2% on desktop (lg), increases to 28px/32px on 5xl
   body2:
-    "text-[13px] leading-[20px] tracking-[2%] lg:text-[14px] 4xl:text-[17px] 4xl:leading-[24px] 4xl-5xl:text-[19px] 4xl-5xl:leading-[26px] 5xl:text-[22px] 5xl:leading-[28px]",
+    "text-[13px] leading-[20px] tracking-[2%] lg:text-[14px] 4xl:text-[19px] 4xl:leading-[26px] 4xl-5xl:text-[22px] 4xl-5xl:leading-[28px] 5xl:text-[28px] 5xl:leading-[32px]",
 
-  // Body 3: 12px/16px/1% on mobile/desktop, increases to 20px/24px on 5xl
+  // Body 3: 12px/16px/1% on mobile/desktop, increases to 26px/30px on 5xl
   body3:
-    "text-[12px] leading-[16px] tracking-[1%] 4xl:text-[15px] 4xl:leading-[20px] 4xl-5xl:text-[17px] 4xl-5xl:leading-[22px] 5xl:text-[20px] 5xl:leading-[24px]",
+    "text-[12px] leading-[16px] tracking-[1%] 4xl:text-[17px] 4xl:leading-[22px] 4xl-5xl:text-[20px] 4xl-5xl:leading-[25px] 5xl:text-[26px] 5xl:leading-[30px]",
 
-  // Label: 11px/16px/2% on mobile, 12px/16px/1% on desktop (lg), increases to 16px/20px on 5xl
+  // Label: 11px/16px/2% on mobile, 12px/16px/1% on desktop (lg), increases to 19px/23px on 5xl
   label:
-    "text-[11px] leading-[16px] tracking-[2%] lg:text-[12px] lg:tracking-[1%] 4xl:text-[14px] 4xl:leading-[18px] 4xl-5xl:text-[15px] 4xl-5xl:leading-[19px] 5xl:text-[16px] 5xl:leading-[20px]",
+    "text-[11px] leading-[16px] tracking-[2%] lg:text-[12px] lg:tracking-[1%] 4xl:text-[15px] 4xl:leading-[19px] 4xl-5xl:text-[17px] 4xl-5xl:leading-[21px] 5xl:text-[19px] 5xl:leading-[23px]",
 
-  // Call to Action: 16px/16px/4% on mobile, 18px/16px/4% on desktop (lg), increases to 26px/22px on 5xl
-  cta: "text-[16px] leading-[16px] tracking-[4%] lg:text-[18px] 4xl:text-[21px] 4xl:leading-[19px] 4xl-5xl:text-[23px] 4xl-5xl:leading-[20px] 5xl:text-[26px] 5xl:leading-[22px]",
+  // Call to Action: 16px/16px/4% on mobile, 18px/16px/4% on desktop (lg), increases to 32px/26px on 5xl
+  cta: "text-[16px] leading-[16px] tracking-[4%] lg:text-[18px] 4xl:text-[24px] 4xl:leading-[21px] 4xl-5xl:text-[27px] 4xl-5xl:leading-[22px] 5xl:text-[32px] 5xl:leading-[26px]",
 };

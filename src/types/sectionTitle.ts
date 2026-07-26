@@ -8,13 +8,13 @@ export type SectionTitleVariant = "main" | "secondary";
  * @param whitePart: the text to display in white (Neue Montreal Bold)
  * @param coloredPart: the text to display in italics (Neue Montreal Bold Italic)
  * @param variant: main or secondary (controls text size)
- * @param color: optional color for the colored part (e.g., "text-violet-600", "text-amber-500")
+ * @param colorItalic: optional color for the colored part (e.g., "text-violet-600", "text-amber-500")
  */
 export type SectionTitleProps = {
   whitePart: string;
   coloredPart: string;
   variant: SectionTitleVariant;
-  color?: string;
+  colorItalic?: string;
 };
 
 /**
