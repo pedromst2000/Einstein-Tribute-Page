@@ -1,6 +1,7 @@
 import React from "react";
 import StarField from "../../components/StarField";
 import Hero from "../../sections/Hero/Hero";
+import Bio from "../../sections/Bio/Bio";
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,9 @@ const Home: React.FC = () => {
       <main className="relative z-10 px-3 2xs:px-4 xs:px-4">
         <section aria-label="Hero">
           <Hero />
+        </section>
+        <section aria-label="Bio">
+          <Bio />
         </section>
       </main>
     </div>
