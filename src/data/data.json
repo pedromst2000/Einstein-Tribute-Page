@@ -77,5 +77,25 @@
       "title": "Final Chapter",
       "description": "He dies in Princeton, leaving behind a legacy that reshaped physics and human thought."
     }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "icon": "Brain",
+      "subtitle": "Revolutionary Thinker",
+      "body": "Transformed our understanding of space, time, and the universe itself"
+    },
+    {
+      "id": 2,
+      "icon": "Lightbulb",
+      "subtitle": "Scientific Genius",
+      "body": "Developed ground-breaking theories that continue to shape modern physics"
+    },
+    {
+      "id": 3,
+      "icon": "Award",
+      "subtitle": "Nobel Laureate",
+      "body": "Awarded the Nobel Prize in Physics for his work on the photoelectric effect"
+    }
   ]
 }

@@ -7,7 +7,7 @@ import type { LucideIcon } from "lucide-react";
 export type LucideIconProps = {
   type: "lucide-icon-svg";
   icon: LucideIcon;
-  size?: number;
+  size?: number | string; // Can be a number (px) or responsive string (e.g., "sm:20 md:22 lg:24 xl:24 2xl:24")
   color?: string;
   strokeWidth?: number;
   responsiveClassName?: string; // Custom Tailwind responsive classes for this icon

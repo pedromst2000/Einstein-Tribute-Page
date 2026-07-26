@@ -7,14 +7,23 @@ import SvgRenderer from "../utils/svgRenderer";
  */
 const renderLucideIcon = (props: LucideIconProps): React.ReactNode => {
   const LucideComponent = props.icon as React.FC<{
-    size?: number;
+    size?: number | string;
     color?: string;
     strokeWidth?: number;
   }>;
 
+  // Determine the size to pass to the component
+  let iconSize: number | undefined = 24; // default
+  if (typeof props.size === "number") {
+    iconSize = props.size;
+  } else if (typeof props.size === "string") {
+    // For responsive strings, default to a reasonable size
+    iconSize = 24;
+  }
+
   const icon = (
     <LucideComponent
-      size={props.size}
+      size={iconSize}
       color={props.color}
       strokeWidth={props.strokeWidth}
     />

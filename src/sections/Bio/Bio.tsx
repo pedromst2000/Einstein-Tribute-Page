@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
 import Text from "../../components/Text";
+import CardsLayout from "./components/CardsLayout/Index";
 
 const Bio: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Bio: React.FC = () => {
         the most celebrated scientists of the 20th century reflects the power of
         curiosity and imagination.
       </Text>
+      <CardsLayout />
     </div>
   );
 };
