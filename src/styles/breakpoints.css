@@ -1,0 +1,84 @@
+/* Section Title Divider Breakpoints */
+@layer utilities {
+  @media (width >= 320px) {
+    .section-title-divider {
+      width: 90px;
+    }
+  }
+
+  @media (width >= 375px) {
+    .section-title-divider {
+      width: 105px;
+    }
+  }
+
+  @media (width >= 425px) {
+    .section-title-divider {
+      width: 128px;
+    }
+  }
+
+  @media (width >= 600px) {
+    .section-title-divider {
+      width: 142px;
+    }
+  }
+
+  @media (width >= 768px) {
+    .section-title-divider {
+      width: 170px;
+    }
+  }
+
+  @media (width >= 820px) {
+    .section-title-divider {
+      width: 184px;
+    }
+  }
+
+  @media (width >= 1024px) {
+    .section-title-divider {
+      width: 211px;
+    }
+  }
+
+  @media (width >= 1280px) {
+    .section-title-divider {
+      width: 239px;
+    }
+  }
+
+  @media (width >= 1440px), (width >= 1920px) {
+    .section-title-divider {
+      width: 267px;
+    }
+  }
+
+  @media (width >= 2560px) {
+    .section-title-divider {
+      width: 319px;
+    }
+  }
+
+  @media (width >= 3200px) {
+    .section-title-divider {
+      width: 383px;
+    }
+  }
+
+  /* ================================================Display Tertiary Gradient - Responsive adjustments for small screens : xs and sm================================== */
+  @media (width >= 320px), (width >= 425px) {
+    .display-tertiary-gradient {
+      background: linear-gradient(
+        to right,
+        var(--color-violet-600) 15%,
+        var(--color-violet-400) 35%,
+        var(--color-blue-500) 45%,
+        var(--color-blue-400) 60%,
+        var(--color-amber-500) 70%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

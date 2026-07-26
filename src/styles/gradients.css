@@ -1,0 +1,78 @@
+@layer utilities {
+  /* Universe Radial Background - Global fixed gradient with vertical stretch */
+
+  .universe-radial {
+    background: radial-gradient(
+      ellipse 50% 70% at center,
+      var(--color-indigo-900) 0%,
+      var(--color-slate-950) 100%
+    );
+    min-height: 100vh;
+  }
+
+  /* ==========================================================Avatar Gradient Border - 5 stops vertical distribution==================================================== */
+  .avatar-border-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--color-violet-600) 0%,
+      var(--color-violet-400) 20%,
+      var(--color-blue-500) 40%,
+      var(--color-blue-400) 65%,
+      var(--color-amber-500) 100%
+    );
+    border-radius: 50%;
+  }
+
+  /* ======================================================== Display Gradients - Variant-specific gradient styles=========================================================== */
+  .display-main-gradient {
+    background: linear-gradient(
+      to right,
+      var(--color-violet-600) 15%,
+      var(--color-violet-400) 30%,
+      var(--color-blue-500) 45%,
+      var(--color-blue-400) 65%,
+      var(--color-amber-500) 95%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .display-secondary-gradient {
+    background: linear-gradient(
+      to right,
+      var(--color-violet-600) 3%,
+      var(--color-violet-400) 15%,
+      var(--color-blue-500) 50%,
+      var(--color-blue-400) 65%,
+      var(--color-amber-500) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .display-tertiary-gradient {
+    background: linear-gradient(
+      to right,
+      var(--color-violet-600) 15%,
+      var(--color-violet-400) 35%,
+      var(--color-blue-500) 45%,
+      var(--color-blue-400) 60%,
+      var(--color-amber-500) 75%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* ===============================================================================Section Title Divider Gradient============================================================ */
+  .section-title-divider {
+    width: 80px;
+    background: linear-gradient(
+      90deg,
+      var(--color-violet-600) 15%,
+      var(--color-violet-400) 30%,
+      var(--color-blue-500) 45%,
+      var(--color-blue-400) 65%,
+      var(--color-amber-500) 95%
+    );
+  }
+}
